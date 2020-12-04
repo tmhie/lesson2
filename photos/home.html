@@ -1,0 +1,2303 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5-%2Dcss-%2Djavascript.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GokiSoft - Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript</title>
+<meta name="description" content="Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+
+<meta property="og:url" content="http://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html">
+<meta property="article:author" content="http://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript">
+<meta property="og:description" content="Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript">
+<meta property="og:image" content="https://res.cloudinary.com/ziczacgroup/image/upload/v1591178726/wiqeipvmlwqjs79tqevc.jpg">
+<meta property="og:locale" content="vi_VN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript">
+<meta name="twitter:image:src" content="https://res.cloudinary.com/ziczacgroup/image/upload/v1591178726/wiqeipvmlwqjs79tqevc.jpg">
+<meta name="twitter:description" content="Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript">
+<meta name="google-site-verification" content="owoQMlqWmrnzN1_p5GvjIDrNvxyWE72ujK-WaN4wCUY">
+
+
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/gokisoft-com/image/upload/v1553571154/ico_copy_uhtlfa.png">
+
+<link rel="stylesheet" type="text/css" href="./home_files/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="./home_files/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="./home_files/fontawesome-all.min.css">
+
+<link rel="stylesheet" type="text/css" href="./home_files/material-design-iconic-font.min.css">
+
+<link rel="stylesheet" type="text/css" href="./home_files/animate.css">
+
+<link rel="stylesheet" type="text/css" href="./home_files/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="./home_files/animsition.min.css">
+
+<link rel="stylesheet" type="text/css" href="./home_files/util.min.css">
+
+<link rel="stylesheet" type="text/css" href="./home_files/main.css">
+
+<link href="./home_files/monokai.css" rel="stylesheet" type="text/css" media="screen">
+
+<style type="text/css">
+    #description img {
+        width: 100% !important;
+        cursor: pointer;
+    }
+
+    .float{
+      position:fixed;
+      width:50px;
+      height:50px;
+      bottom:20px;
+      right:20px;
+      background-color:#0C9;
+      color:#FFF;
+      border-radius:50px;
+      text-align:center;
+      box-shadow: 2px 2px 3px #999;
+    }
+
+    .my-float{
+      margin-top:17px;
+    }
+</style>
+<style type="text/css">
+.user-image {
+    float: left;
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px
+}
+  /* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    /*min-width: 250px;*/ /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #979899; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes  fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes  fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+pre {
+    margin-top: 5px !important;
+}
+</style>
+<link rel="stylesheet" href="./home_files/summernote.css">
+<style type="text/css">
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999999999;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media  screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<style>.gc-bubbleDefault{table-layout:auto!important}.gc-bubbleDefault,.gc-reset{background-color:transparent!important;text-align:left;padding:0!important;margin:0!important;border:0!important}.pls-bubbleTop{border-bottom:1px solid #ccc!important}.pls-contentLeft,.pls-topTail,.pls-vertShimLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif)!important}.pls-topTail{background-repeat:repeat-x!important;background-position:bottom!important}.pls-vertShim{background-color:#fff!important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5!important}.pls-vertShimLeft{background-repeat:repeat-y!important;background-position:100%!important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2!important}.pls-contentWrap{background-color:#fff!important;position:relative!important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:100%;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png)!important;background-repeat:repeat-y!important}.pls-dropBL,.pls-dropBottom,.pls-dropRight,.pls-dropTR .pls-dropBR,.pls-tailleft,.pls-vert,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png)!important;background-repeat:repeat-x!important;width:100%}.pls-topLeft{text-align:right}.pls-topLeft,.pls-topRight{background:inherit!important;vertical-align:bottom}.pls-topRight{text-align:left}.pls-bottomLeft{background:inherit!important;text-align:right}.pls-bottomRight{background:inherit!important;text-align:left;vertical-align:top}.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{display:none;position:relative}.pls-dropBL,.pls-dropBR,.pls-dropTR,.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png)!important;background-repeat:no-repeat}.tbl-grey .pls-dropBL,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropTR,.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailleft,.tbl-grey .pls-tailright,.tbl-grey .pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png)!important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-tailbottom,.pls-topLeft img,.pls-topRight img{vertical-align:bottom}.bubbleDropTR,.pls-bottomLeft,.pls-bottomLeft img,.pls-dropBottom img,.pls-dropBottomL img,.pls-dropBottomR img{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacerbottom,.pls-spacerleft,.pls-spacerright,.pls-spacertop{position:static!important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0}</style><style type="text/css">#st-1 {
+  font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+  direction: ltr;
+  display: block;
+  opacity: 1;
+  text-align: left;
+  z-index: 94034;
+}
+#st-1.st-animated {
+  -moz-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -ms-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -o-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -webkit-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+}
+#st-1.st-hidden {
+  opacity: 0;
+}
+#st-1.st-hide {
+  display: none;
+}
+#st-1 .st-btn {
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  -moz-transition: opacity 0.2s ease-in, top 0.2s ease-in; -ms-transition: opacity 0.2s ease-in, top 0.2s ease-in; -o-transition: opacity 0.2s ease-in, top 0.2s ease-in; -webkit-transition: opacity 0.2s ease-in, top 0.2s ease-in; transition: opacity 0.2s ease-in, top 0.2s ease-in;
+  -moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 8px;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+#st-1 .st-btn:last-child {
+  margin-right: 0;
+}
+#st-1 .st-btn > svg {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 10px;
+  vertical-align: top;
+}
+#st-1 .st-btn > img {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 10px;
+  vertical-align: top;
+}
+#st-1 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  min-width: 67px;
+  opacity: 1;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+}
+#st-1.st-has-labels .st-btn {
+  min-width: 135px;
+}
+#st-1.st-has-labels .st-btn.st-remove-label {
+  min-width: 50px;
+}
+#st-1.st-has-labels .st-btn.st-remove-label > span {
+  display: none;
+}
+#st-1.st-has-labels .st-btn.st-hide-label > span {
+  display: none;
+}
+#st-1 .st-total {
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 15px;
+  margin-right: 0;
+  max-width: 80px;
+  padding: 4px 8px;
+  text-align: center;
+}
+#st-1 .st-total.st-hidden {
+  display: none;
+}
+#st-1 .st-total > span {
+  font-size: 20px;
+  line-height: 22px;
+  display: block;
+  padding: 0;
+}
+#st-1 .st-total > span.st-shares {
+  font-size: 12px;
+  line-height: 12px;
+}
+#st-1.st-justified {
+  display: flex;
+  text-align: center;
+}
+#st-1.st-justified .st-btn {
+  -moz-flex: 1;
+-ms-flex: 1;
+-webkit-flex: 1;
+flex: 1;
+}#st-1 .st-btn:hover {
+  opacity: .8;
+  top: -4px;
+}#st-1 .st-btn[data-network='facebook'] {
+  background-color: #4267B2;
+}
+#st-1 .st-btn[data-network='facebook'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='facebook'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='twitter'] {
+  background-color: #55acee;
+}
+#st-1 .st-btn[data-network='twitter'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='twitter'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='email'] {
+  background-color: #7d7d7d;
+}
+#st-1 .st-btn[data-network='email'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='email'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='sms'] {
+  background-color: #ffbd00;
+}
+#st-1 .st-btn[data-network='sms'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='sms'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='messenger'] {
+  background-color: #448AFF;
+}
+#st-1 .st-btn[data-network='messenger'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='messenger'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='googleplus'] {
+  background-color: undefined;
+}
+#st-1 .st-btn[data-network='googleplus'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='googleplus'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='pinterest'] {
+  background-color: #CB2027;
+}
+#st-1 .st-btn[data-network='pinterest'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='pinterest'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='whatsapp'] {
+  background-color: #25d366;
+}
+#st-1 .st-btn[data-network='whatsapp'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='whatsapp'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='tumblr'] {
+  background-color: #32506d;
+}
+#st-1 .st-btn[data-network='tumblr'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='tumblr'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='linkedin'] {
+  background-color: #0077b5;
+}
+#st-1 .st-btn[data-network='linkedin'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='linkedin'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='weibo'] {
+  background-color: #ff9933;
+}
+#st-1 .st-btn[data-network='weibo'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='weibo'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='blogger'] {
+  background-color: #ff8000;
+}
+#st-1 .st-btn[data-network='blogger'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='blogger'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='flipboard'] {
+  background-color: #e12828;
+}
+#st-1 .st-btn[data-network='flipboard'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='flipboard'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='delicious'] {
+  background-color: #205cc0;
+}
+#st-1 .st-btn[data-network='delicious'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='delicious'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='wechat'] {
+  background-color: #4EC034;
+}
+#st-1 .st-btn[data-network='wechat'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='wechat'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='digg'] {
+  background-color: #262626;
+}
+#st-1 .st-btn[data-network='digg'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='digg'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='reddit'] {
+  background-color: #ff4500;
+}
+#st-1 .st-btn[data-network='reddit'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='reddit'] > span {
+  color: #fff;
+}</style><style type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+<body>
+
+
+<header>
+
+<div class="container-menu-desktop fix-menu-desktop">
+<div class="topbar">
+<div class="content-topbar container h-100">
+<div class="left-topbar">
+<a href="https://gokisoft.com/admin/information" target="__blank"><img src="./home_files/3c520481f26b545e045142eafedee5d7.png" class="user-image" alt="User Image"></a>
+<a href="https://gokisoft.com/editor" class="left-topbar-item" target="_blank">
+Ghi Chú
+</a>
+<a href="https://web.gokisoft.com/" class="left-topbar-item" target="_blank">
+Thiết Kế Web
+</a>
+<a href="https://gokisoft.com/cv/464" class="left-topbar-item" style="color: yellow; font-weight: bold;" target="_blank">
+My CV
+</a>
+<a href="https://gokisoft.com/myclass" class="left-topbar-item">My Class</a>
+<a href="https://gokisoft.com/lien-he" class="left-topbar-item">
+Liên Hệ
+</a>
+<a href="https://gokisoft.com/members" class="left-topbar-item">
+Học Viên Tích Cực
+</a>
+<a href="https://gokisoft.com/ung-ho--tai-tro-de-gokisoft-co-the-ra-that-nhieu-khoa-hoc--chia-se-nhieu-kien-thuc-hon-nua-vi-cong-dong.html" class="left-topbar-item" style="color: #36f506; display: none;">
+Ủng Hộ
+</a>
+<a href="https://gokisoft.com/logout" class="left-topbar-item" onclick="event.preventDefault();
+                                                 document.getElementById(&#39;logout-form&#39;).submit();">
+Thoát
+</a>
+<form id="logout-form" action="https://gokisoft.com/logout" method="POST" style="display: none;">
+<input type="hidden" name="_token" value="Xlb72Nm5z8JdBSCQJROc6eWK5DHLlFLgKLCtXRfn">
+<input type="submit" value="logout" style="display: none;">
+</form>
+</div>
+<div class="right-topbar">
+<a href="https://www.facebook.com/groups/devAZ/" target="_blank">
+<span class="fab fa-facebook-f"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#">
+<span class="fab fa-twitter"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#">
+<span class="fab fa-pinterest-p"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#">
+<span class="fab fa-vimeo-v"></span>
+</a>
+<a href="https://www.youtube.com/channel/UCd8aIzwdaoQ_Abp3frmeZSA?sub_confirmation=1" target="_blank">
+<img src="./home_files/1384060.svg" style="max-height: 35px">
+</a>
+</div>
+</div>
+</div>
+
+<div class="wrap-header-mobile">
+
+<div class="logo-mobile">
+<a href="https://gokisoft.com/"><img src="./home_files/qhwncq3wtjkrsyke6ayw.png" alt="IMG-LOGO"></a>
+</div>
+
+<div class="btn-show-menu-mobile hamburger hamburger--squeeze m-r--8">
+<span class="hamburger-box">
+<span class="hamburger-inner"></span>
+</span>
+</div>
+</div>
+
+<div class="menu-mobile">
+<ul class="topbar-mobile">
+<li class="left-topbar">
+<a href="https://gokisoft.com/" class="left-topbar-item">
+Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)
+</a>
+</li>
+<li class="right-topbar">
+<a href="https://learning.gokisoft.com/admin" class="left-topbar-item">
+Đăng Nhập
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#">
+<span class="fab fa-facebook-f"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#">
+<span class="fab fa-twitter"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#">
+<span class="fab fa-pinterest-p"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#">
+<span class="fab fa-vimeo-v"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#">
+<span class="fab fa-youtube"></span>
+</a>
+</li>
+</ul>
+<ul class="main-menu-m">
+<li>
+<a href="https://gokisoft.com/">Trang Chủ</a>
+</li>
+<li>
+<a href="https://gokisoft.com/lap-trinh-c.htm">Lập Trình C</a>
+</li>
+<li>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#frontend">Frontend</a>
+<ul class="sub-menu-m">
+<li><a href="https://gokisoft.com/hoc-html5-css3.htm">Học HTML5 - CSS3</a></li>
+<li><a href="https://gokisoft.com/hoc-bootstrap.htm">Học Bootstrap</a></li>
+<li><a href="https://gokisoft.com/hoc-js.htm">Học JS</a></li>
+<li><a href="https://gokisoft.com/hoc-jquery.htm">Học JQuery</a></li>
+</ul>
+<span class="arrow-main-menu-m">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+</li>
+<li>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#backend">Backend</a>
+<ul class="sub-menu-m">
+<li><a href="https://gokisoft.com/hoc-php.htm">Học PHP</a></li>
+<li><a href="https://gokisoft.com/hoc-laravel.htm">Học Laravel</a></li>
+</ul>
+<span class="arrow-main-menu-m">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+</li>
+<li>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#java">Java</a>
+<ul class="sub-menu-m">
+<li><a href="https://gokisoft.com/java-basic.htm">Java Basic</a></li>
+<li><a href="https://gokisoft.com/java-advanced.htm">Java Advanced</a></li>
+<li><a href="https://gokisoft.com/java-web-ejb-ead.htm">Java Web + EJB (EAD)</a></li>
+<li><a href="https://gokisoft.com/java-web-webservice.htm">Java Web + WebService</a></li>
+<li><a href="https://gokisoft.com/java-web-ea.htm">Java Web + EA</a></li>
+<li><a href="https://gokisoft.com/web-component-development-servjsp.htm">Web Component Development (SERVJSP)</a></li>
+<li><a href="https://gokisoft.com/spring-mvc.htm">Spring MVC</a></li>
+</ul>
+<span class="arrow-main-menu-m">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+</li>
+<li>
+<a href="https://gokisoft.com/android.htm">Android</a>
+</li>
+<li>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#tools">Tools</a>
+<ul class="sub-menu-m">
+<li><a href="https://gokisoft.com/git-github.htm">Git/Github</a></li>
+</ul>
+<span class="arrow-main-menu-m">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+</li>
+<li>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#khac">Khác</a>
+<ul class="sub-menu-m">
+<li><a href="https://gokisoft.com/projects.htm">Projects</a></li>
+<li><a href="https://gokisoft.com/chia-se-cntt.htm">Chia Sẻ CNTT</a></li>
+<li><a href="https://gokisoft.com/c-sharp.htm">C Sharp</a></li>
+<li><a href="https://gokisoft.com/sql.htm">SQL</a></li>
+<li><a href="https://gokisoft.com/tai-lieu-hoc.htm">Tài Liệu Học</a></li>
+</ul>
+<span class="arrow-main-menu-m">
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+</li>
+</ul>
+</div>
+
+<div class="wrap-logo container">
+
+<div class="logo">
+<a href="https://gokisoft.com/"><img style="height: 65px !important;" src="./home_files/qhwncq3wtjkrsyke6ayw.png" alt="LOGO"></a>
+</div>
+
+<div class="banner-header">
+<a href="https://www.facebook.com/groups/devAZ/" target="_blank"><img src="./home_files/tufegz0akqdcgj7e765r.png" alt="Học Lập Trình Từ A - Z (HTML/CSS/JS - Bootstrap/JQuery - AngularJS - PHP/Laravel - Java v.v)"></a>
+</div>
+</div>
+
+<div class="wrap-main-nav">
+<div class="main-nav show-main-nav">
+
+<nav class="menu-desktop">
+<a class="logo-stick" href="https://gokisoft.com/">
+<img src="./home_files/qhwncq3wtjkrsyke6ayw.png" alt="LOGO">
+</a>
+<ul class="main-menu">
+<li>
+<a href="https://gokisoft.com/">Trang Chủ</a>
+</li>
+<li class="main-menu">
+<a href="https://gokisoft.com/lap-trinh-c.htm">Lập Trình C</a>
+</li>
+<li>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#frontend">Frontend</a>
+<ul class="sub-menu">
+<li><a href="https://gokisoft.com/hoc-html5-css3.htm">Học HTML5 - CSS3</a></li>
+<li><a href="https://gokisoft.com/hoc-bootstrap.htm">Học Bootstrap</a></li>
+<li><a href="https://gokisoft.com/hoc-js.htm">Học JS</a></li>
+<li><a href="https://gokisoft.com/hoc-jquery.htm">Học JQuery</a></li>
+</ul>
+</li>
+<li>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#backend">Backend</a>
+<ul class="sub-menu">
+<li><a href="https://gokisoft.com/hoc-php.htm">Học PHP</a></li>
+<li><a href="https://gokisoft.com/hoc-laravel.htm">Học Laravel</a></li>
+</ul>
+</li>
+<li>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#java">Java</a>
+<ul class="sub-menu">
+<li><a href="https://gokisoft.com/java-basic.htm">Java Basic</a></li>
+<li><a href="https://gokisoft.com/java-advanced.htm">Java Advanced</a></li>
+<li><a href="https://gokisoft.com/java-web-ejb-ead.htm">Java Web + EJB (EAD)</a></li>
+<li><a href="https://gokisoft.com/java-web-webservice.htm">Java Web + WebService</a></li>
+<li><a href="https://gokisoft.com/java-web-ea.htm">Java Web + EA</a></li>
+<li><a href="https://gokisoft.com/web-component-development-servjsp.htm">Web Component Development (SERVJSP)</a></li>
+<li><a href="https://gokisoft.com/spring-mvc.htm">Spring MVC</a></li>
+</ul>
+</li>
+<li class="main-menu">
+<a href="https://gokisoft.com/android.htm">Android</a>
+</li>
+<li>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#tools">Tools</a>
+<ul class="sub-menu">
+<li><a href="https://gokisoft.com/git-github.htm">Git/Github</a></li>
+</ul>
+</li>
+<li>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#khac">Khác</a>
+<ul class="sub-menu">
+<li><a href="https://gokisoft.com/projects.htm">Projects</a></li>
+<li><a href="https://gokisoft.com/chia-se-cntt.htm">Chia Sẻ CNTT</a></li>
+<li><a href="https://gokisoft.com/c-sharp.htm">C Sharp</a></li>
+<li><a href="https://gokisoft.com/sql.htm">SQL</a></li>
+<li><a href="https://gokisoft.com/tai-lieu-hoc.htm">Tài Liệu Học</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<div class="container">
+<div class="headline bg0 flex-wr-sb-c p-rl-20 p-tb-8">
+<div class="f2-s-1 p-r-30 m-tb-6">
+<a href="https://gokisoft.com/" class="breadcrumb-item f1-s-3 cl9">
+Trang Chủ
+</a>
+<a href="https://gokisoft.com/tin-tuc" class="breadcrumb-item f1-s-3 cl9">
+Chủ Đề
+</a>
+<span class="breadcrumb-item f1-s-3 cl9">
+Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript
+</span>
+</div>
+<form method="GET" action="https://www.google.com.vn/search" target="_blank" onsubmit="jQuery(&#39;#q&#39;).val(&#39;site:gokisoft.com &#39; + jQuery(&#39;#s_tmp&#39;).val())">
+<div class="pos-relative size-a-2 bo-1-rad-22 of-hidden bocl11 m-tb-6">
+<input class="f1-s-1 cl6 plh9 s-full p-l-25 p-r-45" type="text" id="s_tmp" placeholder="Tìm kiếm">
+<input type="text" name="q" id="q" style="display: none;">
+<button type="submit" class="flex-c-c size-a-1 ab-t-r fs-20 cl2 hov-cl10 trans-03">
+<i class="zmdi zmdi-search"></i>
+</button>
+</div>
+</form> </div>
+</div>
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html" style="font-size: 14pt !important; color: red">1. Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript</a>
+<a href="https://gokisoft.com/thiet-ke-website-quan-ly-showroom-galaxy-lap-trinh-html5cssjavascript.html" style="font-size: 14pt !important;">2) Thiết kế website quản lý showroom - galaxy - Lập trình HTML5/CSS/Javascript</a>
+<a href="https://gokisoft.com/bai-tap-tao-website-gioi-thieu-thong-tin-ca-nhan-profile-page-lap-trinh-htmlcssjs.html" style="font-size: 14pt !important;">3) Bài tập - Tạo website giới thiệu thông tin cá nhân - profile page - Lập trình HTML/CSS/JS</a>
+</div>
+<span style="font-size:30px;cursor:pointer;position: fixed; top: 40%; left: 15px;" onclick="openNav()">☰
+</span>
+<section class="bg0 p-b-140 p-t-10" id="description">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8 p-b-30">
+<div class="p-r-10 p-r-0-sr991">
+
+<div class="p-b-70">
+<h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript <div id="___sharetoclassroom_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 32px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 32px;" tabindex="0" vspace="0" width="100%" id="I0_1607049328063" name="I0_1607049328063" src="./home_files/widget_stable.html" data-gapiattached="true"></iframe></div>
+</h3>
+<div class="flex-wr-s-s p-b-40">
+<span class="f1-s-3 cl8 m-r-15">
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="f1-s-4 cl8 hov-cl10 trans-03">
+by TRẦN VĂN ĐIỆP
+</a>
+<span class="m-rl-3">-</span>
+<span>
+14:40 03/12/2020
+</span>
+</span>
+<span class="f1-s-3 cl8 m-r-15">
+3,753 Lượt Xem
+</span>
+</div>
+<style type="text/css">
+							p img {
+								width: 100% !important;
+							}
+						</style>
+<div id="menu_post_div" style="display: none; background: #ecebeb; padding: 15px;">
+<h1 style="font-weight: bold; text-transform: uppercase; font-size: 14pt;">Menu Bài Viết:</h1>
+<ul id="menu_post">
+</ul>
+</div> <p class="f1-s-11 cl6 p-b-15" id="description_main">
+<label style="color: grey; font-weight: bold;">Short URL: <a href="https://gokisoft.com/1571">https://gokisoft.com/1571</a></label>
+<iframe src="./home_files/edit.html" height="600px" width="100%" frameborder="0"></iframe> <br> </p><p><a href="https://drive.google.com/open?id=0BxtCVUgqsgDfXzZaaURMRUVMMlk"></a></p><h1><a href="https://drive.google.com/open?id=0BxtCVUgqsgDfXzZaaURMRUVMMlk">Tải tài nguyên bài tập</a></h1>
+<p></p>
+<p>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7242961778697092" data-ad-slot="3026237021"></ins>
+<iframe id="pxcelframe" src="./home_files/t_.html" style="display: none;"></iframe><script async="" src="./home_files/get_counts"></script><script src="./home_files/cb=gapi(4).loaded_3" async=""></script><script type="text/javascript" async="" src="./home_files/analytics.js.download"></script><script src="./home_files/cb=gapi(5).loaded_2" async=""></script><script src="./home_files/1217882781722846" async=""></script><script src="./home_files/sdk.js.download" async="" crossorigin="anonymous"></script><script async="" src="./home_files/fbevents.js.download"></script><script id="facebook-jssdk" src="./home_files/sdk.js(1).download"></script><script async="" src="./home_files/5a73edc97d6e9100131b2337.js.download"></script><script src="./home_files/cb=gapi(6).loaded_1" async=""></script><script src="./home_files/cb=gapi(7).loaded_0" async=""></script><script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p>
+<div class="f1-s-11 cl6 p-b-25" style="border-left: solid 3px green; padding-left: 8px; background-color: #f7f7f7; margin-top: 20px">
+<p style="font-weight: bold;">Theo dõi cập nhật nội dung học trên Youtube</p>
+<br>
+<script src="./home_files/platform.js.download" gapi_processed="true"></script>
+<div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 169px; height: 48px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 169px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I1_1607049328193" name="I1_1607049328193" src="./home_files/subscribe_embed.html" data-gapiattached="true"></iframe></div>
+</div>
+
+<div class="flex-s-s p-t-12 p-b-15">
+<span class="f1-s-12 cl5 m-r-8">
+Tags:
+</span>
+<div class="flex-wr-s-s size-w-0">
+<a href="https://gokisoft.com/tag/HTML5-T6" class="f1-s-12 cl8 hov-link1 m-r-15" title="HTML5-T6">
+HTML5-T6
+</a>
+<a href="https://gokisoft.com/tag/HTML5" class="f1-s-12 cl8 hov-link1 m-r-15" title="HTML5">
+HTML5
+</a>
+<a href="https://gokisoft.com/tag/CSS" class="f1-s-12 cl8 hov-link1 m-r-15" title="CSS">
+CSS
+</a>
+<a href="https://gokisoft.com/tag/Javascript" class="f1-s-12 cl8 hov-link1 m-r-15" title="Javascript">
+Javascript
+</a>
+<a href="https://gokisoft.com/tag/T2008A" class="f1-s-12 cl8 hov-link1 m-r-15" title="T2008A">
+T2008A
+</a>
+<a href="https://gokisoft.com/tag/C2009I" class="f1-s-12 cl8 hov-link1 m-r-15" title="C2009I">
+C2009I
+</a>
+<a href="https://gokisoft.com/tag/Today-C2009I" class="f1-s-12 cl8 hov-link1 m-r-15" title="Today_C2009I">
+Today_C2009I
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#more" onclick="$(&#39;.quick_setting_class&#39;).toggle()">More</a>
+</div>
+</div>
+</div>
+
+<div>
+<h4 class="f1-l-4 cl3 p-b-12">
+Bình luận
+</h4>
+<div class="sharethis-inline-share-buttons st-left  st-inline-share-buttons st-animated" id="st-1"><div class="st-total st-hidden">
+  <span class="st-label"></span>
+  <span class="st-shares">
+    Shares
+  </span>
+</div><div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+  <img alt="facebook sharing button" src="./home_files/facebook.svg">
+  
+</div><div class="st-btn" data-network="twitter" style="display: inline-block;">
+  <img alt="twitter sharing button" src="./home_files/twitter.svg">
+  
+</div><div class="st-btn" data-network="email" style="display: inline-block;">
+  <img alt="email sharing button" src="./home_files/email.svg">
+  
+</div><div class="st-btn" data-network="messenger" style="display: inline-block;">
+  <img alt="messenger sharing button" src="./home_files/messenger.svg">
+  
+</div><div class="st-btn" data-network="pinterest" style="display: inline-block;">
+  <img alt="pinterest sharing button" src="./home_files/pinterest.svg">
+  
+</div><div class="st-btn" data-network="whatsapp" style="display: inline-block;">
+  <img alt="whatsapp sharing button" src="./home_files/whatsapp.svg">
+  
+</div><div class="st-btn" data-network="tumblr" style="display: inline-block;">
+  <img alt="tumblr sharing button" src="./home_files/tumblr.svg">
+  
+</div><div class="st-btn" data-network="linkedin" style="display: inline-block;">
+  <img alt="linkedin sharing button" src="./home_files/linkedin.svg">
+  
+</div><div class="st-btn" data-network="weibo" style="display: inline-block;">
+  <img alt="weibo sharing button" src="./home_files/weibo.svg">
+  
+</div><div class="st-btn" data-network="blogger" style="display: inline-block;">
+  <img alt="blogger sharing button" src="./home_files/blogger.svg">
+  
+</div><div class="st-btn" data-network="flipboard" style="display: inline-block;">
+  <img alt="flipboard sharing button" src="./home_files/flipboard.svg">
+  
+</div><div class="st-btn" data-network="wechat" style="display: inline-block;">
+  <img alt="wechat sharing button" src="./home_files/wechat.svg">
+  
+</div><div class="st-btn" data-network="digg" style="display: inline-block;">
+  <img alt="digg sharing button" src="./home_files/digg.svg">
+  
+</div><div class="st-btn st-last" data-network="reddit" style="display: inline-block;">
+  <img alt="reddit sharing button" src="./home_files/reddit.svg">
+  
+</div></div>
+<script type="text/javascript" src="./home_files/sharethis.js.download"></script>
+<br><br>
+<div class="fb-like fb_iframe_widget" data-href="http://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1958502331079659&amp;container_width=625&amp;href=http%3A%2F%2Fgokisoft.com%2Fthiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=large"><span style="vertical-align: bottom; width: 163px; height: 28px;"><iframe name="f2c72e2f2cd798" width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./home_files/like.html" style="border: none; visibility: visible; width: 163px; height: 28px;" class=""></iframe></span></div>
+<div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="http://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html" data-numposts="10" data-width="100%" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=1958502331079659&amp;container_width=625&amp;height=100&amp;href=http%3A%2F%2Fgokisoft.com%2Fthiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html&amp;locale=vi_VN&amp;numposts=10&amp;sdk=joey&amp;version=v3.0&amp;width=" style="width: 100%;"><span style="vertical-align: bottom; width: 100%; height: 278px;"><iframe name="f22dad6bc19df4c" width="1000px" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./home_files/comments.html" style="border: none; visibility: visible; width: 100%; height: 278px;" class=""></iframe></span></div>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s);
+             js.id = id;
+              js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.0&appId=1958502331079659&autoLogAppEvents=1';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+<br>
+<div class="row" style="margin-bottom: 3px; display: none;" id="yourInfor">
+<div class="col-md-4" style="padding-right: 0px !important">
+<input type="hidden" name="_token" value="Xlb72Nm5z8JdBSCQJROc6eWK5DHLlFLgKLCtXRfn">
+<input required="" type="text" id="fullname" class="form-control" placeholder="Họ &amp; Tên" maxlength="100" value="tranminhhieu [community,C2009I]" readonly="">
+</div>
+<div class="col-md-4" style="padding-right: 0px !important; padding-left: 3px !important;">
+<input required="" type="text" class="form-control" placeholder="Email" id="email" maxlength="150" value="tmhieu73@gmail.com" readonly="">
+</div>
+<div class="col-md-4" style="padding-left: 3px !important;">
+<input required="" type="text" class="form-control" placeholder="Số Điện Thoại" id="phone_number" maxlength="15" value="0388323926" readonly="">
+</div>
+</div>
+<textarea class="resetInput" id="summernote" name="content" required="" maxlength="2000" title="Để yêu cầu mã nguồn bài học hoặc bài tập, vui lòng để lại phản hồi" style="display: none;"></textarea><div class="note-editor note-frame panel"><div class="note-dropzone">  <div class="note-dropzone-message"></div></div><div class="note-toolbar-wrapper panel-default" style="height: 33.7px;"><div class="note-toolbar panel-heading" style="position: relative; top: 0px; width: 100%;"><div class="note-btn-group btn-group note-font"><button type="button" class="note-btn btn btn-default btn-sm note-btn-bold" tabindex="-1" title="" data-original-title="Bold (CTRL+B)"><i class="note-icon-bold"></i></button><button type="button" class="note-btn btn btn-default btn-sm note-btn-italic" tabindex="-1" title="" data-original-title="Italic (CTRL+I)"><i class="note-icon-italic"></i></button><button type="button" class="note-btn btn btn-default btn-sm note-btn-underline" tabindex="-1" title="" data-original-title="Underline (CTRL+U)"><i class="note-icon-underline"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Remove Font Style (CTRL+\)"><i class="note-icon-eraser"></i></button></div><div class="note-btn-group btn-group note-fontsize"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Font Size"><span class="note-current-fontsize">15</span> <span class="note-icon-caret"></span></button><div class="dropdown-menu note-check dropdown-fontsize"><li><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" data-value="8"><i class="note-icon-menu-check"></i> 8</a></li><li><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" data-value="9"><i class="note-icon-menu-check"></i> 9</a></li><li><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" data-value="10"><i class="note-icon-menu-check"></i> 10</a></li><li><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" data-value="11"><i class="note-icon-menu-check"></i> 11</a></li><li><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" data-value="12"><i class="note-icon-menu-check"></i> 12</a></li><li><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" data-value="14"><i class="note-icon-menu-check"></i> 14</a></li><li><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" data-value="18"><i class="note-icon-menu-check"></i> 18</a></li><li><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" data-value="24"><i class="note-icon-menu-check"></i> 24</a></li><li><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" data-value="36"><i class="note-icon-menu-check"></i> 36</a></li></div></div></div><div class="note-btn-group btn-group note-color"><div class="note-btn-group btn-group note-color"><button type="button" class="note-btn btn btn-default btn-sm note-current-color-button" tabindex="-1" title="" data-original-title="Recent Color" data-backcolor="#FFFF00"><i class="note-icon-font note-recent-color" style="background-color: rgb(255, 255, 0);"></i></button><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="More Color"> <span class="note-icon-caret"></span></button><div class="dropdown-menu"><div class="note-palette">  <div class="note-palette-title">Background Color</div>  <div>    <button type="button" class="note-color-reset btn btn-light" data-event="backColor" data-value="inherit">Transparent    </button>  </div>  <div class="note-holder" data-event="backColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="backColor" data-value="#000000" title="" data-toggle="button" tabindex="-1" data-original-title="#000000"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="backColor" data-value="#424242" title="" data-toggle="button" tabindex="-1" data-original-title="#424242"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="backColor" data-value="#636363" title="" data-toggle="button" tabindex="-1" data-original-title="#636363"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="backColor" data-value="#9C9C94" title="" data-toggle="button" tabindex="-1" data-original-title="#9C9C94"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="backColor" data-value="#CEC6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#CEC6CE"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="backColor" data-value="#EFEFEF" title="" data-toggle="button" tabindex="-1" data-original-title="#EFEFEF"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="backColor" data-value="#F7F7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#F7F7F7"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="backColor" data-value="#FF0000" title="" data-toggle="button" tabindex="-1" data-original-title="#FF0000"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="backColor" data-value="#FF9C00" title="" data-toggle="button" tabindex="-1" data-original-title="#FF9C00"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="backColor" data-value="#FFFF00" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFF00"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="backColor" data-value="#00FF00" title="" data-toggle="button" tabindex="-1" data-original-title="#00FF00"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="backColor" data-value="#00FFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#00FFFF"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="backColor" data-value="#0000FF" title="" data-toggle="button" tabindex="-1" data-original-title="#0000FF"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="backColor" data-value="#9C00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#9C00FF"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="backColor" data-value="#FF00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#FF00FF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="backColor" data-value="#F7C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#F7C6CE"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="backColor" data-value="#FFE7CE" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE7CE"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="backColor" data-value="#FFEFC6" title="" data-toggle="button" tabindex="-1" data-original-title="#FFEFC6"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="backColor" data-value="#D6EFD6" title="" data-toggle="button" tabindex="-1" data-original-title="#D6EFD6"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="backColor" data-value="#CEDEE7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEDEE7"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="backColor" data-value="#CEE7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEE7F7"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="backColor" data-value="#D6D6E7" title="" data-toggle="button" tabindex="-1" data-original-title="#D6D6E7"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="backColor" data-value="#E7D6DE" title="" data-toggle="button" tabindex="-1" data-original-title="#E7D6DE"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="backColor" data-value="#E79C9C" title="" data-toggle="button" tabindex="-1" data-original-title="#E79C9C"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="backColor" data-value="#FFC69C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFC69C"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="backColor" data-value="#FFE79C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE79C"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="backColor" data-value="#B5D6A5" title="" data-toggle="button" tabindex="-1" data-original-title="#B5D6A5"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="backColor" data-value="#A5C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#A5C6CE"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="backColor" data-value="#9CC6EF" title="" data-toggle="button" tabindex="-1" data-original-title="#9CC6EF"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="backColor" data-value="#B5A5D6" title="" data-toggle="button" tabindex="-1" data-original-title="#B5A5D6"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="backColor" data-value="#D6A5BD" title="" data-toggle="button" tabindex="-1" data-original-title="#D6A5BD"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="backColor" data-value="#E76363" title="" data-toggle="button" tabindex="-1" data-original-title="#E76363"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="backColor" data-value="#F7AD6B" title="" data-toggle="button" tabindex="-1" data-original-title="#F7AD6B"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="backColor" data-value="#FFD663" title="" data-toggle="button" tabindex="-1" data-original-title="#FFD663"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="backColor" data-value="#94BD7B" title="" data-toggle="button" tabindex="-1" data-original-title="#94BD7B"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="backColor" data-value="#73A5AD" title="" data-toggle="button" tabindex="-1" data-original-title="#73A5AD"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="backColor" data-value="#6BADDE" title="" data-toggle="button" tabindex="-1" data-original-title="#6BADDE"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="backColor" data-value="#8C7BC6" title="" data-toggle="button" tabindex="-1" data-original-title="#8C7BC6"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="backColor" data-value="#C67BA5" title="" data-toggle="button" tabindex="-1" data-original-title="#C67BA5"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="backColor" data-value="#CE0000" title="" data-toggle="button" tabindex="-1" data-original-title="#CE0000"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="backColor" data-value="#E79439" title="" data-toggle="button" tabindex="-1" data-original-title="#E79439"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="backColor" data-value="#EFC631" title="" data-toggle="button" tabindex="-1" data-original-title="#EFC631"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="backColor" data-value="#6BA54A" title="" data-toggle="button" tabindex="-1" data-original-title="#6BA54A"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="backColor" data-value="#4A7B8C" title="" data-toggle="button" tabindex="-1" data-original-title="#4A7B8C"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="backColor" data-value="#3984C6" title="" data-toggle="button" tabindex="-1" data-original-title="#3984C6"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="backColor" data-value="#634AA5" title="" data-toggle="button" tabindex="-1" data-original-title="#634AA5"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="backColor" data-value="#A54A7B" title="" data-toggle="button" tabindex="-1" data-original-title="#A54A7B"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="backColor" data-value="#9C0000" title="" data-toggle="button" tabindex="-1" data-original-title="#9C0000"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="backColor" data-value="#B56308" title="" data-toggle="button" tabindex="-1" data-original-title="#B56308"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="backColor" data-value="#BD9400" title="" data-toggle="button" tabindex="-1" data-original-title="#BD9400"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="backColor" data-value="#397B21" title="" data-toggle="button" tabindex="-1" data-original-title="#397B21"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="backColor" data-value="#104A5A" title="" data-toggle="button" tabindex="-1" data-original-title="#104A5A"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="backColor" data-value="#085294" title="" data-toggle="button" tabindex="-1" data-original-title="#085294"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="backColor" data-value="#311873" title="" data-toggle="button" tabindex="-1" data-original-title="#311873"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="backColor" data-value="#731842" title="" data-toggle="button" tabindex="-1" data-original-title="#731842"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="backColor" data-value="#630000" title="" data-toggle="button" tabindex="-1" data-original-title="#630000"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="backColor" data-value="#7B3900" title="" data-toggle="button" tabindex="-1" data-original-title="#7B3900"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="backColor" data-value="#846300" title="" data-toggle="button" tabindex="-1" data-original-title="#846300"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="backColor" data-value="#295218" title="" data-toggle="button" tabindex="-1" data-original-title="#295218"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="backColor" data-value="#083139" title="" data-toggle="button" tabindex="-1" data-original-title="#083139"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="backColor" data-value="#003163" title="" data-toggle="button" tabindex="-1" data-original-title="#003163"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="backColor" data-value="#21104A" title="" data-toggle="button" tabindex="-1" data-original-title="#21104A"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="backColor" data-value="#4A1031" title="" data-toggle="button" tabindex="-1" data-original-title="#4A1031"></button></div></div></div></div><div class="note-palette">  <div class="note-palette-title">Foreground Color</div>  <div>    <button type="button" class="note-color-reset btn btn-light" data-event="removeFormat" data-value="foreColor">Reset to default    </button>  </div>  <div class="note-holder" data-event="foreColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="foreColor" data-value="#000000" title="" data-toggle="button" tabindex="-1" data-original-title="#000000"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="foreColor" data-value="#424242" title="" data-toggle="button" tabindex="-1" data-original-title="#424242"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="foreColor" data-value="#636363" title="" data-toggle="button" tabindex="-1" data-original-title="#636363"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="foreColor" data-value="#9C9C94" title="" data-toggle="button" tabindex="-1" data-original-title="#9C9C94"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="foreColor" data-value="#CEC6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#CEC6CE"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="foreColor" data-value="#EFEFEF" title="" data-toggle="button" tabindex="-1" data-original-title="#EFEFEF"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="foreColor" data-value="#F7F7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#F7F7F7"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="foreColor" data-value="#FF0000" title="" data-toggle="button" tabindex="-1" data-original-title="#FF0000"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="foreColor" data-value="#FF9C00" title="" data-toggle="button" tabindex="-1" data-original-title="#FF9C00"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="foreColor" data-value="#FFFF00" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFF00"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="foreColor" data-value="#00FF00" title="" data-toggle="button" tabindex="-1" data-original-title="#00FF00"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="foreColor" data-value="#00FFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#00FFFF"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="foreColor" data-value="#0000FF" title="" data-toggle="button" tabindex="-1" data-original-title="#0000FF"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="foreColor" data-value="#9C00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#9C00FF"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="foreColor" data-value="#FF00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#FF00FF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="foreColor" data-value="#F7C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#F7C6CE"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="foreColor" data-value="#FFE7CE" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE7CE"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="foreColor" data-value="#FFEFC6" title="" data-toggle="button" tabindex="-1" data-original-title="#FFEFC6"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="foreColor" data-value="#D6EFD6" title="" data-toggle="button" tabindex="-1" data-original-title="#D6EFD6"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="foreColor" data-value="#CEDEE7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEDEE7"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="foreColor" data-value="#CEE7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEE7F7"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="foreColor" data-value="#D6D6E7" title="" data-toggle="button" tabindex="-1" data-original-title="#D6D6E7"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="foreColor" data-value="#E7D6DE" title="" data-toggle="button" tabindex="-1" data-original-title="#E7D6DE"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="foreColor" data-value="#E79C9C" title="" data-toggle="button" tabindex="-1" data-original-title="#E79C9C"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="foreColor" data-value="#FFC69C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFC69C"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="foreColor" data-value="#FFE79C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE79C"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="foreColor" data-value="#B5D6A5" title="" data-toggle="button" tabindex="-1" data-original-title="#B5D6A5"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="foreColor" data-value="#A5C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#A5C6CE"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="foreColor" data-value="#9CC6EF" title="" data-toggle="button" tabindex="-1" data-original-title="#9CC6EF"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="foreColor" data-value="#B5A5D6" title="" data-toggle="button" tabindex="-1" data-original-title="#B5A5D6"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="foreColor" data-value="#D6A5BD" title="" data-toggle="button" tabindex="-1" data-original-title="#D6A5BD"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="foreColor" data-value="#E76363" title="" data-toggle="button" tabindex="-1" data-original-title="#E76363"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="foreColor" data-value="#F7AD6B" title="" data-toggle="button" tabindex="-1" data-original-title="#F7AD6B"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="foreColor" data-value="#FFD663" title="" data-toggle="button" tabindex="-1" data-original-title="#FFD663"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="foreColor" data-value="#94BD7B" title="" data-toggle="button" tabindex="-1" data-original-title="#94BD7B"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="foreColor" data-value="#73A5AD" title="" data-toggle="button" tabindex="-1" data-original-title="#73A5AD"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="foreColor" data-value="#6BADDE" title="" data-toggle="button" tabindex="-1" data-original-title="#6BADDE"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="foreColor" data-value="#8C7BC6" title="" data-toggle="button" tabindex="-1" data-original-title="#8C7BC6"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="foreColor" data-value="#C67BA5" title="" data-toggle="button" tabindex="-1" data-original-title="#C67BA5"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="foreColor" data-value="#CE0000" title="" data-toggle="button" tabindex="-1" data-original-title="#CE0000"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="foreColor" data-value="#E79439" title="" data-toggle="button" tabindex="-1" data-original-title="#E79439"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="foreColor" data-value="#EFC631" title="" data-toggle="button" tabindex="-1" data-original-title="#EFC631"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="foreColor" data-value="#6BA54A" title="" data-toggle="button" tabindex="-1" data-original-title="#6BA54A"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="foreColor" data-value="#4A7B8C" title="" data-toggle="button" tabindex="-1" data-original-title="#4A7B8C"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="foreColor" data-value="#3984C6" title="" data-toggle="button" tabindex="-1" data-original-title="#3984C6"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="foreColor" data-value="#634AA5" title="" data-toggle="button" tabindex="-1" data-original-title="#634AA5"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="foreColor" data-value="#A54A7B" title="" data-toggle="button" tabindex="-1" data-original-title="#A54A7B"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="foreColor" data-value="#9C0000" title="" data-toggle="button" tabindex="-1" data-original-title="#9C0000"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="foreColor" data-value="#B56308" title="" data-toggle="button" tabindex="-1" data-original-title="#B56308"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="foreColor" data-value="#BD9400" title="" data-toggle="button" tabindex="-1" data-original-title="#BD9400"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="foreColor" data-value="#397B21" title="" data-toggle="button" tabindex="-1" data-original-title="#397B21"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="foreColor" data-value="#104A5A" title="" data-toggle="button" tabindex="-1" data-original-title="#104A5A"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="foreColor" data-value="#085294" title="" data-toggle="button" tabindex="-1" data-original-title="#085294"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="foreColor" data-value="#311873" title="" data-toggle="button" tabindex="-1" data-original-title="#311873"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="foreColor" data-value="#731842" title="" data-toggle="button" tabindex="-1" data-original-title="#731842"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="foreColor" data-value="#630000" title="" data-toggle="button" tabindex="-1" data-original-title="#630000"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="foreColor" data-value="#7B3900" title="" data-toggle="button" tabindex="-1" data-original-title="#7B3900"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="foreColor" data-value="#846300" title="" data-toggle="button" tabindex="-1" data-original-title="#846300"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="foreColor" data-value="#295218" title="" data-toggle="button" tabindex="-1" data-original-title="#295218"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="foreColor" data-value="#083139" title="" data-toggle="button" tabindex="-1" data-original-title="#083139"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="foreColor" data-value="#003163" title="" data-toggle="button" tabindex="-1" data-original-title="#003163"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="foreColor" data-value="#21104A" title="" data-toggle="button" tabindex="-1" data-original-title="#21104A"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="foreColor" data-value="#4A1031" title="" data-toggle="button" tabindex="-1" data-original-title="#4A1031"></button></div></div></div></div></div></div></div><div class="note-btn-group btn-group note-para"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Unordered list (CTRL+SHIFT+NUM7)"><i class="note-icon-unorderedlist"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Ordered list (CTRL+SHIFT+NUM8)"><i class="note-icon-orderedlist"></i></button><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Paragraph"><i class="note-icon-align-left"></i> <span class="note-icon-caret"></span></button><div class="dropdown-menu"><div class="note-btn-group btn-group note-align"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Align left (CTRL+SHIFT+L)"><i class="note-icon-align-left"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Align center (CTRL+SHIFT+E)"><i class="note-icon-align-center"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Align right (CTRL+SHIFT+R)"><i class="note-icon-align-right"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Justify full (CTRL+SHIFT+J)"><i class="note-icon-align-justify"></i></button></div><div class="note-btn-group btn-group note-list"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Outdent (CTRL+[)"><i class="note-icon-align-outdent"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Indent (CTRL+])"><i class="note-icon-align-indent"></i></button></div></div></div></div><div class="note-btn-group btn-group note-table"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Table"><i class="note-icon-table"></i> <span class="note-icon-caret"></span></button><div class="dropdown-menu note-table"><div class="note-dimension-picker">  <div class="note-dimension-picker-mousecatcher" data-event="insertTable" data-value="1x1" style="width: 10em; height: 10em;"></div>  <div class="note-dimension-picker-highlighted"></div>  <div class="note-dimension-picker-unhighlighted"></div></div><div class="note-dimension-display">1 x 1</div></div></div></div><div class="note-btn-group btn-group note-insert"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Link (CTRL+K)"><i class="note-icon-link"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Picture"><i class="note-icon-picture"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Video"><i class="note-icon-video"></i></button></div><div class="note-file btn-group"><button data-toggle="modal" data-target="#import_code_modal" type="button" class="btn btn-default btn-sm btn-small" title="Add Code" data-event="something" tabindex="-1"><i class="fa fa-file-text"></i></button></div></div></div><div class="note-editing-area"><div class="note-handle"><div class="note-control-selection"><div class="note-control-selection-bg"></div><div class="note-control-holder note-control-nw"></div><div class="note-control-holder note-control-ne"></div><div class="note-control-holder note-control-sw"></div><div class="note-control-sizing note-control-se"></div><div class="note-control-selection-info"></div></div></div><textarea class="note-codable"></textarea><div class="note-editable" contenteditable="true" style="height: 100px;"><p><br></p></div></div><div class="note-statusbar">  <div class="note-resizebar">    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>  </div></div><div class="modal link-dialog" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Link</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group"><label class="note-form-label">Text to display</label><input class="note-link-text form-control note-form-control  note-input" type="text"></div><div class="form-group note-form-group"><label class="note-form-label">To what URL should this link go?</label><input class="note-link-url form-control note-form-control note-input" type="text" value="http://"></div><div class="checkbox"> <label for="sn-checkbox-open-in-new-window"> <input type="checkbox" id="sn-checkbox-open-in-new-window" checked="">Open in new window</label></div></div>    <div class="modal-footer"><button type="submit" href="#" class="btn btn-primary note-btn note-btn-primary note-link-btn" disabled="">Insert Link</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Chèn Hình Ảnh Vào Bài Viết</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group note-group-select-from-files"><label class="note-form-label">Lựa Chọn Hình Ảnh</label><input class="note-image-input note-form-control note-input" type="file" name="files" accept="image/*" multiple="multiple"></div><div class="form-group note-group-image-url" style="overflow:auto;"><label class="note-form-label">Sử Dụng Link Hình Ảnh</label><input class="note-image-url form-control note-form-control note-input  col-md-12" type="text"></div></div>    <div class="modal-footer"><button type="submit" href="#" class="btn btn-primary note-btn note-btn-primary note-image-btn" disabled="">Chèn Hình Ảnh Vào Bài Viết</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Video</h4>    </div>    <div class="modal-body"><div class="form-group note-form-group row-fluid"><label class="note-form-label">Video URL <small class="text-muted">(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)</small></label><input class="note-video-url form-control note-form-control note-input" type="text"></div></div>    <div class="modal-footer"><button type="submit" href="#" class="btn btn-primary note-btn note-btn-primary note-video-btn" disabled="">Insert Video</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Help</h4>    </div>    <div class="modal-body" style="max-height: 300px; overflow: scroll;"><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>ENTER</kbd></label><span>Insert Paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+Z</kbd></label><span>Undoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+Y</kbd></label><span>Redoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>TAB</kbd></label><span>Tab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>SHIFT+TAB</kbd></label><span>Untab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+B</kbd></label><span>Set a bold style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+I</kbd></label><span>Set a italic style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+U</kbd></label><span>Set a underline style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+S</kbd></label><span>Set a strikethrough style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+BACKSLASH</kbd></label><span>Clean a style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+L</kbd></label><span>Set left align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+E</kbd></label><span>Set center align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+R</kbd></label><span>Set right align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+J</kbd></label><span>Set full align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+NUM7</kbd></label><span>Toggle unordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+SHIFT+NUM8</kbd></label><span>Toggle ordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+LEFTBRACKET</kbd></label><span>Outdent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+RIGHTBRACKET</kbd></label><span>Indent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM0</kbd></label><span>Change current block's format as a paragraph(P tag)</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM1</kbd></label><span>Change current block's format as H1</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM2</kbd></label><span>Change current block's format as H2</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM3</kbd></label><span>Change current block's format as H3</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM4</kbd></label><span>Change current block's format as H4</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM5</kbd></label><span>Change current block's format as H5</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+NUM6</kbd></label><span>Change current block's format as H6</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+ENTER</kbd></label><span>Insert horizontal rule</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CTRL+K</kbd></label><span>Show Link Dialog</span></div>    <div class="modal-footer"><p class="text-center"><a href="http://summernote.org/" target="_blank">Summernote 0.8.9</a> · <a href="https://github.com/summernote/summernote" target="_blank">Project</a> · <a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a></p></div>  </div></div></div></div>
+<button type="button" onclick="postComment()" class="btn btn-danger" style="margin-top: 15px">Gửi Phản Hồi</button>
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#import_code_modal" style="margin-top: 15px">Chèn Code</button>
+<input type="file" id="import_code_files" multiple="" style="display: none;">
+<button type="button" class="btn btn-infor" style="margin-top: 15px;" onclick="uploadAllFiles()">Attach File</button>
+<div class="row">
+<div id="alert_div" class="alert alert-success" style="display: none; margin-top: 15px"></div>
+</div>
+<div class="row table-responsive" style="margin-top: 20px;background-color: #eae8e8; padding: 15px">
+<div class="col-md-12" style="margin-bottom: 30px !important;">
+<h3 style="text-transform: uppercase; font-weight: bold; color: black" id="comment_by">Phản Hồi Bởi: </h3>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Le-Van-Dung-HTML5-T6#comment_by" style="margin-right: 20px">(1) Le Van Dung [HTML5-T6]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=xuanbach-HTML5-T6#comment_by" style="margin-right: 20px">(2) xuanbach [HTML5-T6]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Ta-Dung-Hoai-HTML5-T6#comment_by" style="margin-right: 20px">(3) Ta Dung Hoai [HTML5-T6]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=V%C5%A9-%C4%90%C3%ACnh-Kh%C3%B4i-community#comment_by" style="margin-right: 20px">(4) Vũ Đình Khôi [community]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Nguy%E1%BB%85n-Ti%E1%BA%BFn-%C4%90%E1%BA%A1t-T2008A#comment_by" style="margin-right: 20px">(5) Nguyễn Tiến Đạt [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=vuong-huu-phu-T2008A#comment_by" style="margin-right: 20px">(6) vuong huu phu [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Nguy%C3%AAn-Ph%E1%BA%A5n-%C4%90%C3%B4ng-community#comment_by" style="margin-right: 20px">(7) Nguyên Phấn Đông [community]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Do-Trung-Duc-T2008A#comment_by" style="margin-right: 20px">(8) Do Trung Duc [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=nguy%E1%BB%85n-S%E1%BB%AD-T2008A#comment_by" style="margin-right: 20px">(9) nguyễn Sử [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=%C4%90%E1%BB%A9c-S%C6%A1n-T2008A#comment_by" style="margin-right: 20px">(10) Đức Sơn [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=%C4%90%E1%BA%B7ng-Tr%E1%BA%A7n-Nh%E1%BA%ADt-Minh-T2008A#comment_by" style="margin-right: 20px">(11) Đặng Trần Nhật Minh [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=hainguyen-T2008A#comment_by" style="margin-right: 20px">(12) hainguyen [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Tri%E1%BB%87u-V%C4%83n-L%C4%83ng-T2008A#comment_by" style="margin-right: 20px">(13) Triệu Văn Lăng [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Tr%E1%BA%A7n-V%C4%83n-L%C3%A2m-T2008A#comment_by" style="margin-right: 20px">(14) Trần Văn Lâm [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Nguy%E1%BB%85n-Xu%C3%A2n-Mai-T2008A#comment_by" style="margin-right: 20px">(15) Nguyễn Xuân Mai [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Tr%E1%BA%A7n-Th%E1%BB%8B-Kh%C3%A1nh-Huy%E1%BB%81n-T2008A#comment_by" style="margin-right: 20px">(16) Trần Thị Khánh Huyền [T2008A]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Nguy%E1%BB%85n-H%E1%BA%A3i-%C4%90%C4%83ng-community,C2009I#comment_by" style="margin-right: 20px">(17) Nguyễn Hải Đăng [community,C2009I]</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?comment_by=Trinh-Huy-Hung-community,C2009I#comment_by" style="margin-right: 20px">(18) Trinh Huy Hung [community,C2009I]</a>
+</div>
+<div class="col-md-12" style="margin-bottom: 30px !important; font-size: 16pt">
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#setting" onclick="sendCVPermission(1571, 1)" style="color: black">
+<i class="fa fa-toggle-off"></i> Bạn hiện đang ẩn bài này khỏi CV
+</a>
+</div>
+<div class="col-md-12">
+<h3 style="text-transform: uppercase; font-weight: bold; color: black">Chia sẻ từ lớp học</h3>
+</div>
+<div class="col-md-12" id="comments_id">
+<div class="row table-responsive" style="padding-top: 10px; padding-bottom: 10px">
+<div class="col-md-1">
+<img src="./home_files/c5cd1f25c7a1fbe45b7ee35a66ceeb6c.png" class="user-image" style="width: 45px !important; height: 45px !important;">
+</div>
+<div class="col-md-10">
+<p>Trinh Huy Hung [community,C2009I]</p>
+<p style="color: grey">
+Ngày viết: 23:24 03/12/2020
+</p>
+</div>
+<div class="col-md-1">
+</div>
+</div>
+<div class="row table-responsive">
+<div class="col-md-12" name="comment_child" value="3340">
+<p>https://laball.herokuapp.com/bai2/home.html<br></p>
+</div>
+</div>
+<div class="row table-responsive" style="padding-top: 10px; padding-bottom: 10px">
+<div class="col-md-1">
+<img src="./home_files/8ea49f7d50e84016c91b9c881b3f92ac.png" class="user-image" style="width: 45px !important; height: 45px !important;">
+</div>
+<div class="col-md-10">
+<p>Nguyễn Hải Đăng [community,C2009I]</p>
+<p style="color: grey">
+Ngày viết: 22:36 03/12/2020
+</p>
+</div>
+<div class="col-md-1">
+</div>
+</div>
+<div class="row table-responsive">
+<div class="col-md-12" name="comment_child" value="3336">
+<p>https://newlevel06.herokuapp.com/Day%202/Home.html<br></p>
+</div>
+</div>
+<div class="row table-responsive" style="padding-top: 10px; padding-bottom: 10px">
+<div class="col-md-1">
+<img src="./home_files/554e115833778e4294a01aebe228f3d6.png" class="user-image" style="width: 45px !important; height: 45px !important;">
+</div>
+<div class="col-md-10">
+<p>Trần Thị Khánh Huyền [T2008A]</p>
+<p style="color: grey">
+Ngày viết: 09:00 11/11/2020
+</p>
+</div>
+<div class="col-md-1">
+</div>
+</div>
+<div class="row table-responsive">
+<div class="col-md-12" name="comment_child" value="3153">
+<p><br></p><h2>#home.html</h2><br><span class="badge badge-info" style="cursor: pointer;font-size: 12px;" id="label_0" onclick="toggle_code(0)">Ẩn Code</span>&nbsp;&nbsp;<span class="badge badge-danger" id="copy_0" style="cursor: pointer;font-size: 12px;" onclick="copyDivToClipboard(&quot;code_0&quot;)">Copy Code</span>&nbsp;&nbsp;<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript/comment/3153/home.html" target="_blank"><span class="badge badge-success" style="cursor: pointer;font-size: 12px;">Xem Demo</span></a><pre filename="home.html" type="code" data="sample" id="code_0" data-trimmed="true" class="rainbow-show"><code class="language-js rainbow rainbow-show"><span class="keyword operator">&lt;</span><span class="keyword operator">!</span>DOCTYPE html<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>html<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>head<span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>title<span class="keyword operator">&gt;</span>Vincent State School<span class="keyword operator">&lt;</span>/title<span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>meta charset<span class="keyword operator">=</span><span class="string">"utf-8"</span><span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>style type<span class="keyword operator">=</span><span class="string">"text/css"</span><span class="keyword operator">&gt;</span>
+		.heading1{
+			font<span class="keyword operator">-</span>family: arial,helvetica,sans<span class="keyword operator">-</span>serif;
+			color: <span class="comment">#6297BC;</span>
+		}
+		.heading2 {
+		color: <span class="comment">#666666;</span>
+		font<span class="keyword operator">-</span>weight: bold;
+		font<span class="keyword operator">-</span>family: tahoma;
+		font<span class="keyword operator">-</span>size: 12px;
+	}
+	<span class="keyword operator">&lt;</span>/style<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>/head<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>body<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>img src<span class="keyword operator">=</span><span class="string">"photos/schoollogo.png"</span> align<span class="keyword operator">=</span><span class="string">"left"</span><span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>h1 <span class="keyword">class</span><span class="keyword operator">=</span><span class="string">"heading1"</span><span class="keyword operator">&gt;</span><span class="keyword operator">&lt;</span>center<span class="keyword operator">&gt;</span>Vincent State School<span class="keyword operator">&lt;</span><span class="string regexp"><span class="string regexp open">/</span>center&gt;&lt;<span class="string regexp close">/</span></span>h1<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>h2 <span class="keyword">class</span><span class="keyword operator">=</span><span class="string">"heading2"</span><span class="keyword operator">&gt;</span><span class="keyword operator">&lt;</span>center<span class="keyword operator">&gt;</span><span class="constant numeric">280</span> Palmerston Street, Townsville, <span class="constant numeric">4814</span><span class="keyword operator">&lt;</span><span class="string regexp"><span class="string regexp open">/</span>center&gt;&lt;<span class="string regexp close">/</span></span>h2<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>br<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>br<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>br<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>br<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>br<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>br<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>br<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>a href<span class="keyword operator">=</span><span class="string">""</span><span class="keyword operator">&gt;</span>Home<span class="keyword operator">&lt;</span>/a<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>a href<span class="keyword operator">=</span><span class="string">""</span><span class="keyword operator">&gt;</span>Information Course<span class="keyword operator">&lt;</span>/a<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>a href<span class="keyword operator">=</span><span class="string">""</span><span class="keyword operator">&gt;</span>Fee Structure<span class="keyword operator">&lt;</span>/a<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>a href<span class="keyword operator">=</span><span class="string">""</span><span class="keyword operator">&gt;</span>Admission Process<span class="keyword operator">&lt;</span>/a<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>h3<span class="keyword operator">&gt;</span><span class="keyword operator">&lt;</span>b<span class="keyword operator">&gt;</span>Welcome to Vincent State School<span class="keyword operator">&lt;</span><span class="string regexp"><span class="string regexp open">/</span>b&gt;&lt;<span class="string regexp close">/</span></span>h3<span class="keyword operator">&gt;</span><span class="keyword operator">&lt;</span>br<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>b<span class="keyword operator">&gt;</span>Welcome to Vincent State School<span class="keyword operator">&lt;</span>/b<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>p<span class="keyword operator">&gt;</span>Our purpose in the community is to provide high quality learning oppoturnities <span class="keyword">for</span> every student. We aim to prom <span class="keyword">and</span> maintain a positive, safe <span class="keyword">and</span> orderly learning environment <span class="keyword">for</span> all students <span class="keyword">and</span> staff<span class="keyword operator">&lt;</span>/p<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>b<span class="keyword operator">&gt;</span>We plan to <span class="keyword">do</span> <span class="variable language this">this</span> though:<span class="keyword operator">&lt;</span>/b<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>ul<span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>li<span class="keyword operator">&gt;</span>The delivery of high quality curriculum<span class="keyword operator">&lt;</span>/li<span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>li<span class="keyword operator">&gt;</span>Excellence in teaching <span class="keyword">and</span> learning<span class="keyword operator">&lt;</span>/li<span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>li<span class="keyword operator">&gt;</span>Recognising diversity<span class="keyword operator">&lt;</span>/li<span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>li<span class="keyword operator">&gt;</span>School Home<span class="string regexp"><span class="string regexp open">/</span> Community Partnerships&lt;<span class="string regexp close">/</span></span>li<span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>li<span class="keyword operator">&gt;</span>Valuing Positive Behavior<span class="keyword operator">&lt;</span>/li<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>/ul<span class="keyword operator">&gt;</span>
+<span class="keyword">This</span> information guide is an introduction to what we hope will be a very happy association <span class="keyword">for</span> you with Vincent State School.
+
+<span class="keyword operator">&lt;</span>/body<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>/html<span class="keyword operator">&gt;</span></code><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></pre><br><br>
+</div>
+</div>
+<div class="row table-responsive" style="padding-top: 10px; padding-bottom: 10px">
+<div class="col-md-1">
+<img src="./home_files/d3d863d6f47708501814fb41e9c38f31.png" class="user-image" style="width: 45px !important; height: 45px !important;">
+</div>
+<div class="col-md-10">
+<p>Nguyễn Xuân Mai [T2008A]</p>
+<p style="color: grey">
+Ngày viết: 23:16 01/11/2020
+</p>
+</div>
+<div class="col-md-1">
+</div>
+</div>
+<div class="row table-responsive">
+<div class="col-md-12" name="comment_child" value="3070">
+<p>https://t2008amai.herokuapp.com/Lesson03/School/home.html<br></p>
+</div>
+</div>
+<div class="row table-responsive" style="padding-top: 10px; padding-bottom: 10px">
+<div class="col-md-1">
+<img src="./home_files/cfc15c8cb7781ad669b013e01f9f1a6b.png" class="user-image" style="width: 45px !important; height: 45px !important;">
+</div>
+<div class="col-md-10">
+<p>Trần Văn Lâm [T2008A]</p>
+<p style="color: grey">
+Ngày viết: 20:31 17/10/2020
+</p>
+</div>
+<div class="col-md-1">
+</div>
+</div>
+<div class="row table-responsive">
+<div class="col-md-12" name="comment_child" value="2843">
+<p><br></p><h2>#addmistion.html</h2><br><span class="badge badge-info" style="cursor: pointer;font-size: 12px;" id="label_1" onclick="toggle_code(1)">Ẩn Code</span>&nbsp;&nbsp;<span class="badge badge-danger" id="copy_1" style="cursor: pointer;font-size: 12px;" onclick="copyDivToClipboard(&quot;code_1&quot;)">Copy Code</span>&nbsp;&nbsp;<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript/comment/2843/addmistion.html" target="_blank"><span class="badge badge-success" style="cursor: pointer;font-size: 12px;">Xem Demo</span></a><pre filename="addmistion.html" type="code" data="sample" id="code_1" data-trimmed="true" class="rainbow-show"><code class="language-js rainbow rainbow-show"><span class="keyword operator">&lt;</span><span class="keyword operator">!</span>DOCTYPE html<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>html<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>head<span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>title<span class="keyword operator">&gt;</span> Vincent State School<span class="keyword operator">&lt;</span>/title<span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>img src<span class="keyword operator">=</span><span class="string">"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-HtRrSAWBjF47Jli1RSZP6juxXySRtzJc6A&amp;usqp=CAU"</span><span class="keyword operator">&gt;</span>
+
+	<span class="keyword operator">&lt;</span>meta charset<span class="keyword operator">=</span><span class="string">"utf-8"</span><span class="keyword operator">&gt;</span>
+	<span class="keyword operator">&lt;</span>style type<span class="keyword operator">=</span><span class="string">"text/css"</span><span class="keyword operator">&gt;</span>
+
+	.heading<span class="keyword operator">-</span><span class="constant numeric">1</span> {
+		font<span class="keyword operator">-</span>family: arial,helvetica,sans<span class="keyword operator">-</span>serif;
+		color: <span class="comment">#6297BC;</span>
+	}
+
+	.heading<span class="keyword operator">-</span><span class="constant numeric">2</span> {
+		color: <span class="comment">#666666;</span>
+		font<span class="keyword operator">-</span>weight: bold;
+		font<span class="keyword operator">-</span>family: tahoma;
+		font<span class="keyword operator">-</span>size: 12px;
+	}
+
+<span class="keyword operator">&lt;</span>/style<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>/head<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>body<span class="keyword operator">&gt;</span>
+  <span class="keyword operator">&lt;</span>h1 <span class="keyword">class</span><span class="keyword operator">=</span><span class="string">"heading-1"</span><span class="keyword operator">&gt;</span><span class="keyword operator">&lt;</span>center<span class="keyword operator">&gt;</span>Vincent State School<span class="keyword operator">&lt;</span><span class="string regexp"><span class="string regexp open">/</span>center&gt;&lt;<span class="string regexp close">/</span></span>h1<span class="keyword operator">&gt;</span>
+  <span class="keyword operator">&lt;</span>h2 <span class="keyword">class</span><span class="keyword operator">=</span><span class="string">"heading-2"</span><span class="keyword operator">&gt;</span><span class="keyword operator">&lt;</span>center<span class="keyword operator">&gt;</span><span class="constant numeric">280</span> Palmerston Street, Townsville, <span class="constant numeric">4814</span><span class="keyword operator">&lt;</span><span class="string regexp"><span class="string regexp open">/</span>center&gt;&lt;<span class="string regexp close">/</span></span>h2<span class="keyword operator">&gt;</span>
+  <span class="keyword operator">&lt;</span>/br<span class="keyword operator">&gt;</span>
+  <span class="keyword operator">&lt;</span>/br<span class="keyword operator">&gt;</span>
+  <span class="keyword operator">&lt;</span>/br<span class="keyword operator">&gt;</span>
+  <span class="keyword operator">&lt;</span>a href<span class="keyword operator">=</span><span class="string">""</span><span class="keyword operator">&gt;</span>Home<span class="keyword operator">&lt;</span>/a<span class="keyword operator">&gt;</span>
+  <span class="keyword operator">&lt;</span>a href<span class="keyword operator">=</span><span class="string">" file:///C:/Vicent%20School/Vicent%20School/infomation.html "</span><span class="keyword operator">&gt;</span>Information Cource<span class="keyword operator">&lt;</span>/a<span class="keyword operator">&gt;</span>
+  <span class="keyword operator">&lt;</span>a href<span class="keyword operator">=</span><span class="string">""</span><span class="keyword operator">&gt;</span>Fee Structure<span class="keyword operator">&lt;</span>/a<span class="keyword operator">&gt;</span>
+  <span class="keyword operator">&lt;</span>a href<span class="keyword operator">=</span><span class="string">""</span><span class="keyword operator">&gt;</span>Admission Process<span class="keyword operator">&lt;</span>/a<span class="keyword operator">&gt;</span>
+  <span class="keyword operator">&lt;</span>p<span class="keyword operator">&gt;</span>Our distinctive curriculum offerings at Vincent SS include: Our outcomes based curriculum (<span class="constant numeric">5</span> KLAs of Science SOSE Technology The Arts <span class="keyword">and</span> HPE) has been organised into the <span class="constant numeric">4</span> <span class="keyword">New</span> Báic organisers <span class="keyword">and</span> staff have developed units <span class="keyword">and</span> contexts that support the teaching of specific core learning outcomes appropriately across the P<span class="keyword operator">-</span><span class="constant numeric">7</span> year levels. Maths <span class="keyword">and</span> English are taught <span class="keyword">as</span> integrated subjects across all key learning areas. Our Literacy <span class="keyword">and</span> Genne program consists of an oral program <span class="keyword">for</span> P<span class="keyword operator">-</span><span class="constant numeric">2</span> classes, a whole school spelling program Letter land <span class="keyword">for</span> Yr P<span class="keyword operator">-</span><span class="constant numeric">3</span> classes <span class="keyword">and</span> Spelling <span class="keyword operator">-</span>A Comprehensive Program Teaching Children How to Spell <span class="keyword">for</span> Yr <span class="constant numeric">4</span><span class="keyword operator">-</span><span class="constant numeric">7</span> <span class="keyword">class</span> <span class="keyword">and</span> an individual spelling program/forder <span class="keyword">for</span> ỷ <span class="constant numeric">4</span><span class="keyword operator">-</span><span class="constant numeric">7</span> classes <span class="keyword">and</span> a structurd <span class="keyword">and</span> sequential reading skills program LOTE (langguages other Than English) is Auslan Middle Phase of Learning Includes an elective program where by our Yr <span class="constant numeric">4</span><span class="keyword operator">-</span><span class="constant numeric">7</span> students participate in extra curricular activities that are of interest ang high engagement teaching them social <span class="keyword">and</span> life skill. The progam runs <span class="keyword">for</span> <span class="constant numeric">6</span> weeks each tem <span class="keyword">and</span> some activitis our students have been involved in so far have been tae kwon <span class="keyword">do</span>, table tennis mini golf, chess, painting,jewelry making,craft,construction.
+<span class="keyword operator">&lt;</span>/p<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>/body<span class="keyword operator">&gt;</span>
+<span class="keyword operator">&lt;</span>/html<span class="keyword operator">&gt;</span></code><div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></pre><br><br>
+</div>
+</div>
+</div>
+<ul class="pagination" role="navigation">
+<li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+<span class="page-link" aria-hidden="true">‹</span>
+</li>
+<li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+<li class="page-item"><a class="page-link" href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?page=2">2</a></li>
+<li class="page-item"><a class="page-link" href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?page=3">3</a></li>
+<li class="page-item"><a class="page-link" href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?page=4">4</a></li>
+<li class="page-item"><a class="page-link" href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?page=5">5</a></li>
+<li class="page-item">
+<a class="page-link" href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?page=2" rel="next" aria-label="Next »">›</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-10 col-lg-4 p-b-30">
+<div class="p-l-10 p-rl-0-sr991 p-t-70">
+<div class="p-b-23">
+<div class="how2 how2-cl4 flex-s-c">
+<h3 class="f1-m-2 cl3 tab01-title">
+Bài Tập Hôm Nay
+</h3>
+</div>
+<ul class="p-t-35">
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6" style="background-color: #d0021b !important;">
+1
+</div>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript">Thiết kế trang web Vincent State School - Lập trình html5 / css / javascript
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+2
+</div>
+<a href="https://gokisoft.com/thiet-ke-website-quan-ly-showroom-galaxy-lap-trinh-html5cssjavascript.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Thiết kế website quản lý showroom - galaxy - Lập trình HTML5/CSS/Javascript">Thiết kế website quản lý showroom - galaxy - Lập trình HTML5/CSS/Javascript
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+3
+</div>
+<a href="https://gokisoft.com/share-code-tim-hieu-the-can-ban-html-ol-li-ul-li-a-tag-lap-trinh-htmlcssjs.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="[Share Code] Tìm hiểu thẻ căn bản html - ol li - ul li - a tag - Lập trình HTML/CSS/JS">[Share Code] Tìm hiểu thẻ căn bản html - ol li - ul li - a tag - Lập trình HTML/CSS/JS
+</a>
+</li>
+</ul>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7242961778697092" data-ad-slot="3026237021"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="p-b-23">
+<div class="how2 how2-cl4 flex-s-c m-b-15">
+<h3 class="f1-m-2 cl3 tab01-title">
+Phân Loại Bài Viết
+</h3>
+</div>
+<ul class="p-t-15">
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+1
+</div>
+<a href="https://gokisoft.com/hoc-html5-css3.htm?post_type=goi-y-muc-luc" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="01. Gợi Ý &amp; Mục Lục">Gợi Ý &amp; Mục Lục</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+2
+</div>
+<a href="https://gokisoft.com/hoc-html5-css3.htm?post_type=ly-thuyet" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="02. Lý Thuyết">Lý Thuyết</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+3
+</div>
+<a href="https://gokisoft.com/hoc-html5-css3.htm?post_type=bai-tap" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="03. Bài Tập">Bài Tập</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+4
+</div>
+<a href="https://gokisoft.com/hoc-html5-css3.htm?post_type=examination-test" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="04. Examination &amp; Test">Examination &amp; Test</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+5
+</div>
+<a href="https://gokisoft.com/hoc-html5-css3.htm?post_type=source-code-chia-se" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="05. Source Code Chia Sẻ">Source Code Chia Sẻ</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+6
+</div>
+<a href="https://gokisoft.com/hoc-html5-css3.htm?post_type=tai-lieu-hoc" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="06. Tài Liệu Học">Tài Liệu Học</a>
+</li>
+</ul>
+</div>
+
+<div class="p-b-30">
+<div class="how2 how2-cl4 flex-s-c">
+<h3 class="f1-m-2 cl3 tab01-title">
+Danh Sách Bài Học
+</h3>
+</div>
+<ul class="p-t-35">
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+1
+</div>
+<a href="https://gokisoft.com/01-gioi-thieu-ve-lap-trinh-web-htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="01.  Giới thiệu về lập trình web - HTML/CSS">
+01. Giới thiệu về lập trình web - HTML/CSS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+2
+</div>
+<a href="https://gokisoft.com/02-huong-dan-debugtestdevelop-tren-trinh-duyet-web--htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="02. Hướng dẫn debug/test/develop trên trình duyệt web -HTML/CSS">
+02. Hướng dẫn debug/test/develop trên trình duyệt web -HTML/CSS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+3
+</div>
+<a href="https://gokisoft.com/03-formatting-text-using-tags-html-tags.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="03.  Formatting Text using Tags - html tags">
+03. Formatting Text using Tags - html tags
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+4
+</div>
+<a href="https://gokisoft.com/04-creating-hyperlinks-and-anchors-html-tags.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="04. Creating Hyperlinks and Anchors (phần 1) - html tags">
+04. Creating Hyperlinks and Anchors (phần 1) - html tags
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+5
+</div>
+<a href="https://gokisoft.com/05-creating-hyperlinks-and-anchors-phan-2-html-tags.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="05.  Creating Hyperlinks and Anchors (phần 2) - html tags">
+05. Creating Hyperlinks and Anchors (phần 2) - html tags
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+6
+</div>
+<a href="https://gokisoft.com/06-introduction-to-css3-phan-1-htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="06.  Introduction to CSS3 (phần 1) - HTML/CSS">
+06. Introduction to CSS3 (phần 1) - HTML/CSS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+7
+</div>
+<a href="https://gokisoft.com/07-introduction-event-in-htmlcssjavascript-htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="07.  Introduction event in html/css/javascript - HTML/CSS">
+07. Introduction event in html/css/javascript - HTML/CSS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+8
+</div>
+<a href="https://gokisoft.com/08-bai-hoc-formatting-using-style-sheets-htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="08. Bài hoc Formatting Using Style Sheets - HTML/CSS">
+08. Bài hoc Formatting Using Style Sheets - HTML/CSS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+9
+</div>
+<a href="https://gokisoft.com/09-cach-dung-the-img-va-map-de-hien-thi-hinh-anh-html-htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="09. Cách dùng thẻ img và map để hiển thị hình ảnh html - HTML/CSS">
+09. Cách dùng thẻ img và map để hiển thị hình ảnh html - HTML/CSS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+10
+</div>
+<a href="https://gokisoft.com/10-cach-dung-the-div-de-bo-cuc-trang-web-htmlcssjavascript.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="10. Cách dùng thẻ div để bố cục trang web (html/css/javascript)">
+10. Cách dùng thẻ div để bố cục trang web (html/css/javascript)
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+11
+</div>
+<a href="https://gokisoft.com/11-hoc-lap-trinh-htmlcssjavascript-function.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="11. Học lập trình html/css/javascript - (function)">
+11. Học lập trình html/css/javascript - (function)
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+12
+</div>
+<a href="https://gokisoft.com/12-hoc-lap-trinh-htmlcssjavascript-session-15-part-2object.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="12. Học lập trình html/css/javascript - session 15 - part 2(object)">
+12. Học lập trình html/css/javascript - session 15 - part 2(object)
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+13
+</div>
+<a href="https://gokisoft.com/13-hoc-lap-trinh-htmlcssjavascript-session-15-part-3function--object.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="13. Học lập trình html/css/javascript - session 15 - part 3(function + object)">
+13. Học lập trình html/css/javascript - session 15 - part 3(function + object)
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+14
+</div>
+<a href="https://gokisoft.com/14-hoc-lap-trinh-htmlcssjavascript-session-15-part-4string.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="14. Học lập trình html/css/javascript - session 15 - part 4(string)">
+14. Học lập trình html/css/javascript - session 15 - part 4(string)
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+15
+</div>
+<a href="https://gokisoft.com/15-htmlcssjavascript-la-gi-va-cach-tao-1-trang-web-don-gian-nhat-htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="15. HTML/CSS/Javascript là gì và cách tạo 1 trang web đơn giản nhất. - HTML/CSS">
+15. HTML/CSS/Javascript là gì và cách tạo 1 trang web đơn giản nhất. - HTML/CSS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+16
+</div>
+<a href="https://gokisoft.com/16-htmlcssjs-tim-hieu-ve-path-trong-htmlcssjs.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="16. HTML/CSS/JS - Tìm hiểu về Path trong HTML/CSS/JS">
+16. HTML/CSS/JS - Tìm hiểu về Path trong HTML/CSS/JS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+17
+</div>
+<a href="https://gokisoft.com/17-lap-trinh-htmlcssjs.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="17. Lập trình HTML/CSS/JS">
+17. Lập trình HTML/CSS/JS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+18
+</div>
+<a href="https://gokisoft.com/18-tim-hieu-table-trong-htmlcss-htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="18. Tìm hiểu table trong HTML/CSS - HTML/CSS">
+18. Tìm hiểu table trong HTML/CSS - HTML/CSS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+19
+</div>
+<a href="https://gokisoft.com/19-tim-hieu-tag-videos-audio-trong-htmlcssjs.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="19. Tìm hiểu tag videos, audio trong HTML/CSS/JS">
+19. Tìm hiểu tag videos, audio trong HTML/CSS/JS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+20
+</div>
+<a href="https://gokisoft.com/20-thiet-ke-form-trong-htmlcssjs.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="20. Thiết kế form trong HTML/CSS/JS">
+20. Thiết kế form trong HTML/CSS/JS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+21
+</div>
+<a href="https://gokisoft.com/21-hoc-lap-trinh-htmlcssjs-qua-vi-du-phan-2-htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="21. Học lập trình html/css/js qua ví dụ phần 2 - HTML/CSS">
+21. Học lập trình html/css/js qua ví dụ phần 2 - HTML/CSS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+22
+</div>
+<a href="https://gokisoft.com/bai-tap-tao-website-gioi-thieu-thong-tin-ca-nhan-profile-page-lap-trinh-htmlcssjs.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bài tập - Tạo website giới thiệu thông tin cá nhân - profile page - Lập trình HTML/CSS/JS">
+Bài tập - Tạo website giới thiệu thông tin cá nhân - profile page - Lập trình HTML/CSS/JS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+23
+</div>
+<a href="https://gokisoft.com/bai-thi-ly-thuyet-htmlcssjs-2.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="Bài Thi Lý Thuyết HTML/CSS/JS - 2">
+Bài Thi Lý Thuyết HTML/CSS/JS - 2
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+24
+</div>
+<a href="https://gokisoft.com/bt01-huong-dan-tao-ra-1-trang-web-don-gian-nhat-htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="BT01.  Hướng dẫn tạo ra 1 trang web đơn giản nhất - HTML/CSS">
+BT01. Hướng dẫn tạo ra 1 trang web đơn giản nhất - HTML/CSS
+</a>
+</li>
+<li class="flex-wr-sb-s p-b-22">
+<div class="size-a-8 flex-c-c borad-3 size-a-8 bg9 f1-m-4 cl0 m-b-6">
+25
+</div>
+<a href="https://gokisoft.com/bt02-bai-tap-array--javascript-htmlcss.html" class="size-w-3 f1-s-7 cl3 hov-cl10 trans-03" title="BT02. Bài tập array + javascript - HTML/CSS">
+BT02. Bài tập array + javascript - HTML/CSS
+</a>
+</li>
+</ul>
+<ul class="pagination" role="navigation">
+<li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+<span class="page-link" aria-hidden="true">‹</span>
+</li>
+<li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+<li class="page-item"><a class="page-link" href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?page=2">2</a></li>
+<li class="page-item"><a class="page-link" href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?page=3">3</a></li>
+<li class="page-item"><a class="page-link" href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?page=4">4</a></li>
+<li class="page-item">
+<a class="page-link" href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html?page=2" rel="next" aria-label="Next »">›</a>
+</li>
+</ul>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7242961778697092" data-ad-slot="3026237021"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="p-b-55">
+<div class="how2 how2-cl4 flex-s-c m-b-30">
+<h3 class="f1-m-2 cl3 tab01-title">
+Quick Quizzz!!!
+</h3>
+</div>
+<div class="flex-wr-s-s m-rl--5" style="background: #ecebeb; padding: 8px;">
+<div class="form-group" style="width: 100% !important;">
+<label>
+<img src="./home_files/fc6ba9324e017d540af3613b3a77dd21.png" class="user-image" alt="User Image" style="width: 35px !important">
+<strong>TRẦN VĂN ĐIỆP</strong>
+<p>20:34 23/04/2020</p>
+<p style="font-weight: bold;">Bạn thích làm về mảng nào nhất?</p>
+</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 0, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index0" index="0"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index0">Lập Trình Mobile Android</label> <img src="./home_files/fc6ba9324e017d540af3613b3a77dd21.png" title="TRẦN VĂN ĐIỆP" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/af7b1a912cb63a5c2d1432db54b2f2dd.png" title="Trần Văn Điêp" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/ee4661d1f9133c241d6c8287c7ea8ceb.png" title="Trần Mạnh Dũng" class="user-image" alt="User Image" style="width: 35px !important"><label class="numberCircle">+21</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 1, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index1" index="1"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index1">Lập Trình Frontend</label> <img src="./home_files/c2ef7c316acb82467912bf5677b52a8b.png" title="Đường Thanh Bình" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/5db166b7b74443c5c221e4c0068d6da9.jpeg" title="Phí Văn Long" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/5a1d730aa7a3ff117afa545ea99d03f3.png" title="Trần Tuấn Anh" class="user-image" alt="User Image" style="width: 35px !important"><label class="numberCircle">+10</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 2, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index2" index="2"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index2">Lập trình PHP/Laravel</label> <img src="./home_files/fc6ba9324e017d540af3613b3a77dd21.png" title="TRẦN VĂN ĐIỆP" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/c2ef7c316acb82467912bf5677b52a8b.png" title="Đường Thanh Bình" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/5db166b7b74443c5c221e4c0068d6da9.jpeg" title="Phí Văn Long" class="user-image" alt="User Image" style="width: 35px !important"><label class="numberCircle">+17</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 3, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index3" index="3"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index3">Theo Java Web (SpringBoot, ...)</label> <img src="./home_files/c2ef7c316acb82467912bf5677b52a8b.png" title="Đường Thanh Bình" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/98f1e29922dc48dd5d41b8f6cbce24e0.png" title="Đỗ tuấn anh" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/d3627ce786997fab24d1b790c91c6368.png" title="hoangkhiem" class="user-image" alt="User Image" style="width: 35px !important"><label class="numberCircle">+21</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 4, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index4" index="4"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index4">Theo NodeJS</label> <img src="./home_files/114894070fbd15fc0c29ffdeab37f4b5.png" title="Vũ Việt Đức" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/565f27ecffbed3df91d80c107af48418.png" title="Nguyen Duc Viet" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/5a1d730aa7a3ff117afa545ea99d03f3.png" title="Trần Tuấn Anh" class="user-image" alt="User Image" style="width: 35px !important"><label class="numberCircle">+5</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 5, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index5" index="5"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index5">Theo Ruby on Rail</label> <img src="./home_files/49c73db02b33c675d2086a8998a3ce70.png" title="GokiSoft.Com" class="user-image" alt="User Image" style="width: 35px !important">
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex; margin-top: 8px; margin-bottom: 8px;" onclick="switchQuiz(478, 6, )">
+<input type="checkbox" style="float: left; margin-top: 12px !important;" id="index6" index="6"><label style="float: left; margin-left: 10px; margin-top: -7px; cursor: pointer; border: solid 1px #f3f3f3; padding: 10px; margin-right: 10px" for="index6">Không biết gì để theo :D :P :D</label> <img src="./home_files/af7b1a912cb63a5c2d1432db54b2f2dd.png" title="Trần Văn Điêp" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/ecca255d725eed36a872105205af1b8e.png" title="Minh Nghia" class="user-image" alt="User Image" style="width: 35px !important"><img src="./home_files/76e646e11f1674fba03bddd0ae020813.png" title="Hoàng Quang Huy" class="user-image" alt="User Image" style="width: 35px !important"><label class="numberCircle">+13</label>
+</div>
+<a href="https://gokisoft.com/menu/quiz_list">&gt;&gt; Hiển Thị Quizzz</a>
+</div>
+</div>
+<div class="p-b-55" style="padding-top: 30px">
+<div class="how2 how2-cl4 flex-s-c m-b-30">
+<h3 class="f1-m-2 cl3 tab01-title">
+Theo Dõi Học Trên Gokisoft
+</h3>
+</div>
+<div class="flex-wr-s-s m-rl--5">
+<div class="textwidget">
+<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/gokisoft/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=1958502331079659&amp;container_width=416&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgokisoft%2F&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"><span style="vertical-align: bottom; width: 340px; height: 130px;"><iframe name="f1dfba6a5766d18" width="1000px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./home_files/page.html" style="border: none; visibility: visible; width: 340px; height: 130px;" class=""></iframe></span></div>
+</div>
+<div id="fb-root"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><iframe src="./home_files/portal-v2.html" id="st_gdpr_iframe" title="GDPR Consent Management" style="width: 0px; height: 0px; position: absolute; left: -5000px;"></iframe>
+
+
+<div class="modal" id="import_code_modal" style="background: rgba(0, 0, 0, 0.5);">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<h4 class="modal-title">Nhập source code của bạn</h4>
+<button type="button" class="close" data-dismiss="modal">×</button>
+</div>
+
+<div class="modal-body">
+<div class="form-group">
+<textarea id="message" class="form-control" rows="8"></textarea>
+</div>
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Huỷ</button>
+<button type="button" class="btn btn-success" data-dismiss="modal" onclick="import_code()">Hoàn Thành</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<a href="https://gokisoft.com/admin/edit-update-post/new" title="Sửa" target="_self" class="float" style="bottom: 100px; background-color: #d0021b !important;">
+<i class="fa fa-plus my-float"></i>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#create_quiz" title="Create quiz" data-toggle="modal" data-target="#quiz" class="float" style="bottom: 40px; background-color: #17b978 !important;">
+<i class="fa fa-question-circle my-float"></i>
+</a>
+
+<footer>
+<div class="bg2 p-t-40 p-b-25">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 p-b-20">
+<div class="size-h-3 flex-s-c">
+<a href="https://gokisoft.com/">
+<img style="height: 65px !important;" class="max-s-full" src="./home_files/qhwncq3wtjkrsyke6ayw.png" alt="LOGO">
+</a>
+</div>
+<div class="f1-s-1 cl11 p-b-16">
+<span style="color: #aaa;">Chúng tôi tạo ra website nay với mong muốn chia sẻ những kiến thức và kinh nghiệm thực tiễn mà chung tôi đã có được - nhằm giúp cho những bạn mới bắt đầu học lập trình trở nên dễ dàng hơn và có lộ trình học cụ thể &amp; rút ngắn thời gian học</span>
+</div>
+<p class="f1-s-1 cl11 p-b-16">
+Bạn có câu hỏi? Hãy email chúng tôi tại <a href="mailto:gokisoft.com@gmail.com" class="email">gokisoft.com@gmail.com</a>
+</p>
+<div class="p-t-15">
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+<span class="fab fa-facebook-f"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+<span class="fab fa-twitter"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+<span class="fab fa-pinterest-p"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+<span class="fab fa-vimeo-v"></span>
+</a>
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+<span class="fab fa-youtube"></span>
+</a>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 p-b-20">
+<div class="size-h-3 flex-s-c">
+<h5 class="f1-m-7 cl0" style="text-transform: uppercase;">
+Bài viết nổi bật
+</h5>
+</div>
+<ul>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/bai-tap-xay-du-he-thong-dua-don-hoc-sinh-bang-xe-bus-cua-truong-hoc-lap-trinh-sql-server.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="./home_files/vf4gyxt7gmthx4eykvlp.jpg" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/bai-tap-xay-du-he-thong-dua-don-hoc-sinh-bang-xe-bus-cua-truong-hoc-lap-trinh-sql-server.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+Bài tập - Xây dự hệ thống đưa đón học sinh bằng xe bus của Trường Học - Lập trình SQL Server
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+03-12-2020
+</span>
+</div>
+</li>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/share-code-tim-hieu-the-can-ban-html-ol-li-ul-li-a-tag-lap-trinh-htmlcssjs.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="./home_files/vf4gyxt7gmthx4eykvlp.jpg" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/share-code-tim-hieu-the-can-ban-html-ol-li-ul-li-a-tag-lap-trinh-htmlcssjs.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+[Share Code] Tìm hiểu thẻ căn bản html - ol li - ul li - a tag - Lập trình HTML/CSS/JS
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+03-12-2020
+</span>
+</div>
+</li>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/php-date-and-time.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="./home_files/vph3t08fdjhuhixcqam0.png" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/php-date-and-time.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+PHP Date and Time
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+02-12-2020
+</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-sm-6 col-lg-4 p-b-20">
+<div class="size-h-3 flex-s-c">
+<h5 class="f1-m-7 cl0" style="text-transform: uppercase;">
+Bài viết mới nhất
+</h5>
+</div>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/video-huong-dan-tao-food-app-bang-listview--baseadapter-lap-trinh-android.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="./home_files/vf4gyxt7gmthx4eykvlp.jpg" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/video-huong-dan-tao-food-app-bang-listview--baseadapter-lap-trinh-android.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+[Video] Hướng dẫn tạo Food App bằng ListView + BaseAdapter - Lập trình android
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+02-12-2020
+</span>
+</div>
+</li>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/share-code-tim-hieu-index-trigger-trong-lap-trinh-sql-server.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="./home_files/vf4gyxt7gmthx4eykvlp.jpg" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/share-code-tim-hieu-index-trigger-trong-lap-trinh-sql-server.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+[Share Code] Tìm hiểu index, trigger trong lập trình SQL Server
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+02-12-2020
+</span>
+</div>
+</li>
+<li class="flex-wr-sb-s p-b-20">
+<a href="https://gokisoft.com/bai-tap-tao-website-gioi-thieu-thong-tin-ca-nhan-profile-page-lap-trinh-htmlcssjs.html" class="size-w-4 wrap-pic-w hov1 trans-03">
+<img src="./home_files/wiqeipvmlwqjs79tqevc.jpg" alt="IMG">
+</a>
+<div class="size-w-5">
+<h6 class="p-b-5">
+<a href="https://gokisoft.com/bai-tap-tao-website-gioi-thieu-thong-tin-ca-nhan-profile-page-lap-trinh-htmlcssjs.html" class="f1-s-5 cl11 hov-cl10 trans-03">
+Bài tập - Tạo website giới thiệu thông tin cá nhân - profile page - Lập trình HTML/CSS/JS
+</a>
+</h6>
+<span class="f1-s-3 cl6">
+01-12-2020
+</span>
+</div>
+</li>
+</div>
+</div>
+</div>
+</div>
+<div class="bg11">
+<div class="container size-h-4 flex-c-c p-tb-15">
+<span class="f1-s-1 cl0 txt-center">
+<a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="f1-s-1 cl10 hov-link1">
+Copyright © 2019 All rights reserved
+</a></span><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="f1-s-1 cl10 hov-link1">
+</a></div><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="f1-s-1 cl10 hov-link1">
+</a></div><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="f1-s-1 cl10 hov-link1">
+
+<script async="" src="./home_files/js"></script>
+<script>
+					  window.dataLayer = window.dataLayer || [];
+					  function gtag(){dataLayer.push(arguments);}
+					  gtag('js', new Date());
+					  gtag('config', 'UA-146138928-1');
+					</script>
+
+<script>
+					  !function(f,b,e,v,n,t,s)
+					  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+					  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+					  if(!f._fbq)f._fbq=n;
+						n.push=n;
+						n.loaded=!0;
+						n.version='2.0';
+						n.queue=[];
+						t=b.createElement(e);
+						t.async=!0;
+						t.src=v;
+						s=b.getElementsByTagName(e)[0];
+					  s.parentNode.insertBefore(t,s)}(window, document,'script',
+					  'https://connect.facebook.net/en_US/fbevents.js');
+					  fbq('init', '1217882781722846');
+					  fbq('track', 'PageView');
+					</script>
+<noscript><img height="1" width="1" style="display:none"
+					  src="https://www.facebook.com/tr?id=1217882781722846&ev=PageView&noscript=1"
+					/></noscript>
+ </a></footer><a href="https://gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript.html#" class="f1-s-1 cl10 hov-link1">
+<div id="snackbar">Đã sao chép!!!</div>
+
+<div class="btn-back-to-top show-btn-back-to-top" id="myBtn">
+<span class="symbol-btn-back-to-top">
+<span class="fas fa-angle-up"></span>
+</span>
+</div>
+
+<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog" role="document" data-dismiss="modal">
+<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">×</div>
+<div class="wrap-video-mo-01">
+<div class="video-mo-01">
+<iframe src="./home_files/wJnBTPUQS5A.html" allowfullscreen=""></iframe>
+</div>
+</div>
+</div>
+</div>
+
+<script src="./home_files/jquery-3.2.1.min.js.download"></script>
+
+<script src="./home_files/animsition.min.js.download"></script>
+
+<script src="./home_files/popper.js.download"></script>
+<script src="./home_files/bootstrap.min.js.download"></script>
+
+<script type="text/javascript" src="./home_files/rainbow.min.js.download"></script>
+<script src="./home_files/javascript.js.download"></script>
+<script src="./home_files/main.js.download"></script>
+<script src="./home_files/summernote.js.download"></script>
+<script type="text/javascript" src="./home_files/upload.js.download"></script>
+<script type="text/javascript" src="./home_files/base64.js.download"></script>
+<script type="text/javascript">
+	var url_upload = 'https://api.cloudinary.com/v1_1/ziczacgroup/image/upload#h7sjrjob';
+
+	function sendCVPermission(idPost, status) {
+		$.get('https://gokisoft.com/mycomment/change?status='+status+'&idPost='+idPost, function() {
+			location.reload()
+		})
+	}
+
+	function filterGroup(groupName) {
+		document.cookie = 'currentGroup='+groupName
+		location.reload()
+	}
+
+	$('#description img').click(function() {
+		window.open($(this).attr('src'), '_self')
+	})
+
+	var deltaTime = 0
+	function viewCodeFromOther() {
+		$.get('https://gokisoft.com/view_comment_from_other?id=1571', function() {
+			deltaTime = 2 * 60 * 60;
+			countDownTimer()
+		})
+	}
+	setTimeout(function() {
+		if(deltaTime > 0) {
+			countDownTimer()
+		}
+	}, 500)
+
+	function countDownTimer() {
+		setInterval(function() {
+			deltaTime -= 1;
+			hour = parseInt(deltaTime / 3600);
+			minute = parseInt((deltaTime - hour * 3600) / 60);
+			second = deltaTime - hour * 3600 - minute * 60;
+			// console.log(hour + ',' + minute + ',' + second)
+			$('#view_code_id').html('Xem code sau >> ' + hour + ':' + minute + ':' + second)
+
+			if(deltaTime <= 0) {
+				location.reload()
+			}
+		}, 1000)
+	}
+
+	function removeComment(id) {
+		option = confirm('Bạn chắc chắn muốn xoá phản hồi này?')
+		if(option) {
+			$.get('https://gokisoft.com/remove_comment?id='+id, function() {
+				location.reload()
+			})
+		}
+	}
+
+	function postComment() {
+		if($($("#summernote").summernote("code")).text() == '') {
+			alert('Bạn cần nhập nội dung phản hồi trước khi gửi !');
+			return;
+		}
+
+		if($('#fullname').val() == '' || $('#phone_number').val() == '' || $('#email').val() == '') {
+			alert('Thông tin cá nhân không được để trống !');
+			return;
+		}
+
+		$.post("https://gokisoft.com/post/comment",
+		  {
+		    id_product: 0,
+		    id_news: 1571,
+		    fullname: $('#fullname').val(),
+		    email: $('#email').val(),
+		    phone_number: $('#phone_number').val(),
+		    comment: $('#summernote').val(),
+		    _token: $('[name=_token]').val()
+		  },
+		  function(data, status){
+		  	$('#alert_div').show()
+		  	$('#alert_div').append('<p style="color: red">Chúng tôi đã nhận được phản hồi từ bạn - chúng tôi sẽ duyệt trước khi phản hồi hiển thị trên mục này</p>')
+		  	setTimeout(function() {
+		  		location.reload()
+		  	}, 2000)
+		  });
+	}
+
+	function filterByTags(tagName) {
+		tagName = remove_unicode(tagName)
+		$('[name=tagFilter]').each(function() {
+			if($(this).attr('data').includes(tagName)) {
+				$(this).show()
+			} else {
+				$(this).hide()
+			}
+		})
+	}
+
+	function remove_unicode(str)
+	{
+	   str= str.toLowerCase();
+	   str= str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a");
+	   str= str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e");
+	   str= str.replace(/ì|í|ị|ỉ|ĩ/g,"i");
+	   str= str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o");
+	   str= str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u");
+	   str= str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y");
+	   str= str.replace(/đ/g,"d");
+	   // str= str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'| |\"|\&|\#|\[|\]|~|$|_/g,"-");
+
+	   // str= str.replace(/-+-/g,"-"); //thay thế 2- thành 1-
+	   // str= str.replace(/^\-+|\-+$/g,"");
+
+	   return str;
+	}
+</script>
+<script type="text/javascript">
+	$("pre.prettyprint").each(function() {
+        var html = $(this).html()//.replace("; ", ";\n")
+        // html = html.replace(";", ";\n")
+        // html = tidy_html5(html, options);
+        $(this).html('<code data-language="java">'+html+'</code>')
+      })
+
+      $(".w3-code").each(function(index) {
+        var content = $(this).html().split('<br>').join("\n");
+        // $(this).html(content);
+        // console.log(content)
+        content = strip_html_tags(content)
+        $(this).html('<pre><code class="language-js">'+content+'</code></pre>');
+      })
+
+      $("pre").each(function(index) {
+        $(this).attr('id', 'code_' + index)
+
+        if($(this).attr('filename') != null && ($(this).attr('filename').endsWith('.html') || $(this).attr('filename').endsWith('.htm'))) {
+
+         var parentclosest = $(this).closest('[name=comment_child]')
+         if(parentclosest.length > 0) {
+         	url = '//gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript/comment/'+$(parentclosest[0]).attr('value')
+         } else {
+         	url = '//gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript/demo';
+         }
+
+          $(this).before("<span class='badge badge-info' style='cursor: pointer;font-size: 12px;' id='label_"+index+"' onclick='toggle_code(" +index+")'>Ẩn Code</span>&nbsp;&nbsp;<span class='badge badge-danger' id='copy_"+index+"' style='cursor: pointer;font-size: 12px;' onclick='copyDivToClipboard(\"code_" +index+"\")'>Copy Code</span>&nbsp;&nbsp;<a href='"+url+"/"+$(this).attr('filename')+"' target='_blank'><span class='badge badge-success' style='cursor: pointer;font-size: 12px;'>Xem Demo</span></a>")
+        } else {
+          $(this).before("<span class='badge badge-info' style='cursor: pointer;font-size: 12px;' id='label_"+index+"' onclick='toggle_code(" +index+")'>Ẩn Code</span>&nbsp;&nbsp;<span class='badge badge-danger' id='copy_"+index+"' style='cursor: pointer;font-size: 12px;' onclick='copyDivToClipboard(\"code_" +index+"\")'>Copy Code</span>")
+        }
+
+        if($(this).attr('filename') != null && ($(this).attr('filename').endsWith('.css') || $(this).attr('filename').endsWith('.css.map'))) {
+          toggle_code(index)
+        }
+      })
+
+  function toggle_code(index) {
+    // alert(index)
+    $("#code_"+index).toggle()
+    $("#copy_"+index).toggle()
+    if($("#code_"+index).is(':visible')) {
+      $("#label_"+index).html("Ẩn Code")
+    } else {
+      $("#label_"+index).html("Hiển Thị Code")
+    }
+  }
+</script>
+<script>
+    	function import_code() {
+		      var message = $("#message").val();
+
+		      $("#summernote").summernote('code', $("#summernote").summernote('code') + '<br/><pre><code class="language-js">'+escapeHtml(message)+'</code></pre><br/><br/>')
+
+		      $("#message").val("");
+		  }
+
+		function escapeHtml(text) {
+		    var map = {
+		      '&': '&amp;',
+		      '<': '&lt;',
+		      '>': '&gt;',
+		      '"': '&quot;',
+		      "'": '&#039;'
+		    };
+
+		    return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+		  }
+
+    	$(function(){
+    		//editor setup
+			$('#summernote').summernote({
+				height: 100,
+				toolbar: [
+				    ['font', ['bold', 'italic', 'underline', 'clear']],
+				    ['fontsize', ['fontsize']],
+				    ['color', ['color']],
+				    ['para', ['ul', 'ol', 'paragraph']],
+				    ['table', ['table']],
+				    ['insert', ['link', 'picture', 'video']]
+				  ],
+				callbacks: {
+					onInit: function() {
+				      // Add "open" - "save" buttons
+				      var noteBtn = '<button data-toggle="modal" data-target="#import_code_modal" type="button" class="btn btn-default btn-sm btn-small" title="Add Code" data-event="something" tabindex="-1"><i class="fa fa-file-text"></i></button>';
+				      var fileGroup = '<div class="note-file btn-group">' + noteBtn + '</div>';
+				      $(fileGroup).appendTo($('.note-toolbar'));
+				      // Button tooltips
+				      $('#makeSnote').tooltip({
+				        container: 'body',
+				        placement: 'bottom'
+				      });
+				    },
+				    onBlur: function() {
+	                  // $('#yourInfor').show()
+	                }
+				}
+			});
+
+			$('.note-popover').hide()
+
+			// process tags
+			tags = 'HTML5-T6,HTML5,CSS,Javascript,T2008A,C2009I,Today_C2009I'.toLowerCase()
+			tags = tags.split(',')
+			if(tags != null && tags.length > 0) {
+				$('[name=className]').each(function() {
+					className = $(this).val().toLowerCase()
+					if(tags.indexOf(className) >= 0) {
+						$(this).prop('checked', true)
+					}
+				})
+			}
+
+			$('[name=className]').change(function() {
+				if($(this).prop('checked')) {
+					// console.log('checked >> ' + $(this).val())
+					quickSetting('tags', 'add', $(this).val())
+				} else {
+					// console.log('unchecked >> ' + $(this).val())
+					quickSetting('tags', 'remove', $(this).val())
+				}
+			})
+
+			$('#Highlight').change(function() {
+				quickSetting('Highlight', '', $(this).val())
+			})
+
+			$('#is_view_comment').change(function() {
+				quickSetting('is_view_comment', '', $(this).val())
+			})
+
+			$('#Highlight').val(0)
+			$('#is_view_comment').val(1)
+
+			$('#import_code_files').change(function(e) {
+				console.log('change.........')
+				if ( ! window.FileReader ) {
+					return console.log('FileReader API is not supported by your browser.');
+				}
+				// console.log($(this).val())
+				input = e.target; // Getting the element from jQuery
+				if ( input.files && input.files[0] ) {
+					fileList = input.files
+					index = 0
+
+					readFile()
+				} else {
+					// Handle errors here
+					console.log('File not selected or browser incompatible.')
+				}
+			})
+		});
+
+		function quickSetting(fieldName, action, value) {
+			$.get('https://gokisoft.com/admin/quick/setting?id='+1571+'&fieldName='+fieldName+'&action='+action+'&value='+value, function(data) {
+				location.reload()
+			})
+		}
+
+		var fileList = null;
+    	var index = 0;
+
+		function readFile() {
+			if(index >= fileList.length) {
+				return;
+			}
+
+			file = fileList[index]
+			index++
+
+			var allowedExtension = ['.jpeg', '.jpg', '.png', '.gif', '.bmp'];
+			for (var i = 0; i < allowedExtension.length; i++) {
+				if(file.name.endsWith(allowedExtension[i])) {
+					uploadURLCloudinary(file, null, function(url) {
+						$("#summernote").summernote('code', $("#summernote").summernote('code') + '<h1>#'+file.name+'</h1><br/><pre filename="'+file.name+'" type="image" data="sample"><code class="language-js">'+url+'</code></pre><br/><br/>')
+
+						readFile()
+					})
+					return;
+				}
+			}
+
+			fr = new FileReader(); // FileReader instance
+			fr.onload = function () {
+				// Do stuff on onload, use fr.result for contents of file
+				// console.log(fr.result)
+				// console.log(file)
+				// content = fr.result.replace('data:text/plain;base64,', '')
+				// content = content.replace('data:application/octet-stream;base64,', '')
+				content = fr.result.split(',')
+				if(content.length > 1) {
+					content = content[1]
+				} else {
+					content = content[0]
+				}
+				content = Base64.decode(content)
+				$("#summernote").summernote('code', $("#summernote").summernote('code') + '<h2>#'+file.name+'</h2><br/><pre filename="'+file.name+'" type="code" data="sample"><code class="language-js">'+escapeHtml(content)+'</code></pre><br/><br/>')
+
+				readFile()
+			};
+			//fr.readAsText( file );
+			fr.readAsDataURL( file );
+		}
+
+		function uploadAllFiles() {
+			$('#import_code_files').click()
+		}
+    </script>
+<script>
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "420px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+<script type="text/javascript">
+    // $(function() {
+
+        var h1Tags = jQuery('h1')
+        var menuContent = ''
+        for (var i = 0; i < h1Tags.length; i++) {
+            if(jQuery(h1Tags[i]).text().startsWith('#')) {
+                title = jQuery(h1Tags[i]).text().trim()
+                title = title.replace(/\*+$/,' ');
+                if(jQuery(h1Tags[i]).text().trim().startsWith('##')) {
+                    title = title.replace(/#/g, '&nbsp;&nbsp;&nbsp;&nbsp;');
+                } else {
+                    title = title.replace(/#/g, '');
+                }
+
+                htmlDemo = ''
+                if(title.includes('.htm')) {
+                  var parentclosest = $(this).closest('[name=comment_child]')
+                  if(parentclosest.length > 0) {
+                    url = '//gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript/comment/'+$(parentclosest[0]).attr('value')
+                  } else {
+                    url = '//gokisoft.com/thiet-ke-trang-web-vincent-state-school-lap-trinh-html5--css--javascript/demo';
+                  }
+                  htmlDemo = "&nbsp;&nbsp;<a href='"+url+"/"+title+"' target='_blank'><span class='badge badge-success' style='cursor: pointer;font-size: 12px;'>Xem Demo</span></a>";
+                }
+
+                param = remove_unicode(jQuery(h1Tags[i]).text().replace(/#/g, '').toLowerCase())
+                menuContent += '<li style="list-style-type: none;"><a style="text-decoration:none" href="#'+param+'" onclick="scrollToTarget(\''+param+'\')">'+title + htmlDemo +'</a></li>';
+
+                if(jQuery(h1Tags[i]).text().trim().endsWith('*')) {
+                  title = jQuery(h1Tags[i]).html()
+                  title = title.replace(/#/g, '');
+                  title = title.replace(/\*/g, ' ');
+                  jQuery(h1Tags[i]).html(title + '<a style="color: black; color: 12pt;" href="#menu_post" onclick="scrollToTarget(\'menu_post\')"> >> Xem menu bài viết</a>')
+                } else {
+                  title = jQuery(h1Tags[i]).html()
+                  title = title.replace(/#/g, '');
+                  jQuery(h1Tags[i]).html(title)
+                }
+
+                jQuery(h1Tags[i]).attr('id', param)
+            }
+        }
+
+        if(menuContent != '') {
+            jQuery('#menu_post_div').show()
+            jQuery('#menu_post').append(menuContent)
+        }
+    // })
+
+    function scrollToTarget(target) {
+        jQuery('html, body').animate({
+            scrollTop: jQuery("#"+target).offset().top
+        }, 600);
+    }
+
+    function remove_unicode(str)
+    {
+       str= str.toLowerCase();
+       str= str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a");
+       str= str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e");
+       str= str.replace(/ì|í|ị|ỉ|ĩ/g,"i");
+       str= str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o");
+       str= str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u");
+       str= str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y");
+       str= str.replace(/đ/g,"d");
+       str= str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'| |\"|\&|\#|\[|\]|~|$|_/g,"-");
+
+       str= str.replace(/-+-/g,"-"); //thay thế 2- thành 1-
+       str= str.replace(/^\-+|\-+$/g,"");
+
+       str = str.replace(/\s/g,'');
+       return str;
+    }
+</script>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+ js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  function copyDivToClipboard(id) {
+    // var range = document.getSelection().getRangeAt(0);
+    // range.selectNode(document.getElementById(id));
+    // window.getSelection().addRange(range);
+    // document.execCommand("copy")
+    var text = $("#"+id).text();
+
+    var dummy = document.createElement("textarea");
+    document.body.appendChild(dummy);
+    dummy.innerHTML = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+    </script>
+
+<style type="text/css">
+  .quiz_answer_content:empty:before {
+    content:attr(data-placeholder);
+    color:gray
+  }
+
+  .tag.label.label-info {
+    background: #f0ad4e !important;
+    border-color: #eea236 !important;
+    padding: 3px !important;
+  }
+
+  .bootstrap-tagsinput {
+    width: 100% !important;
+  }
+
+  .numberCircle {
+      float: left;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 5px;
+      background: #fff;
+      border: 2px solid grey;
+      color: grey;
+      text-align: center;
+      font-weight: bold;
+  }
+</style>
+<link rel="stylesheet" href="./home_files/bootstrap-tagsinput.css">
+<script src="./home_files/bootstrap-tagsinput.js.download"></script>
+<div class="modal" id="quiz" style="background: rgba(0, 0, 0, 0.5);">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<h4 class="modal-title" style="text-transform: uppercase; color: red !important;">Tạo câu hỏi (Quizzz)</h4>
+<button type="button" class="close" data-dismiss="modal">×</button>
+</div>
+
+<div class="modal-body" id="quiz_answer_content_group">
+<div class="form-group">
+<label>Câu hỏi</label>
+<input type="text" name="quiz_title" class="form-control" placeholder="Nhập câu hỏi vào đây ..." style="border: none !important;">
+</div>
+<div class="form-group">
+<label>Đáp Án (Đáp án rỗng sẽ không hiển thị)</label>
+</div>
+<div class="checkbox" name="quiz_answer" style="display: flex;">
+<input type="checkbox" style="float: left;"><label contenteditable="true" name="quiz_answer_content" class="quiz_answer_content" style="float: left;min-width: 60% !important; margin-left: 10px; margin-top: -7px" onkeyup="onkeyupQuiz()" data-placeholder="Vào đáp án ..."></label>
+</div>
+</div>
+<div class="modal-body">
+<div class="form-group">
+<label>Tags:</label>
+<div class="bootstrap-tagsinput"><input type="text" placeholder="Nhập tags vào đây ..."></div><input type="text" name="tags" class="form-control tagsInput" data-role="tagsinput" width="100% !important;" placeholder="Nhập tags vào đây ..." style="border: none !important; display: none;">
+</div>
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Huỷ</button>
+<button type="button" class="btn btn-success" data-dismiss="modal" onclick="submitQuiz()">Hoàn Thành</button>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+  function onkeyupQuiz() {
+    var answers = jQuery('[name=quiz_answer_content]')
+    var isAddMore = true;
+    for (var i = 0; i < answers.length; i++) {
+      if($(answers[i]).html().length == 0 || $(answers[i]).html().includes('Vào đáp')) {
+        isAddMore = false;
+        break;
+      }
+    }
+    if(isAddMore) {
+      $('#quiz_answer_content_group').append(`<div class="checkbox" name="quiz_answer" style="display: flex;">
+          <input type="checkbox" style="float: left;"><label contenteditable="true" name="quiz_answer_content" style="float: left;min-width: 60% !important; margin-left: 10px; margin-top: -7px" onkeyup="onkeyupQuiz()" data-placeholder="Vào đáp án ..." class="quiz_answer_content"></label>
+        </div>`)
+    }
+  }
+
+  function submitQuiz() {
+    if($('[name=quiz_title]').val() == '') {
+      alert('Không được để trống tiêu đề Quiz.')
+      return;
+    }
+    var content = []
+    var answers = jQuery('[name=quiz_answer_content]')
+    for (var i = 0; i < answers.length; i++) {
+      if($(answers[i]).html().length == 0 || $(answers[i]).html().includes('Vào đáp')) {
+      } else {
+        content.push($(answers[i]).html())
+      }
+    }
+    if(content.length == 0) {
+      alert('Quiz của bạn không có đáp án nào.')
+      return;
+    }
+    content = JSON.stringify(content)
+
+    $.post('https://gokisoft.com/menu/add_menu_expand_content', {
+      content_id: '',
+      id: 473,
+      _token: "Xlb72Nm5z8JdBSCQJROc6eWK5DHLlFLgKLCtXRfn",
+      title: $('[name=quiz_title]').val(),
+      tags: $('[name=tags]').val(),
+      content: content
+    }, function(data) {
+      location.reload()
+    })
+  }
+
+  function switchQuiz(id, index, status) {
+    $.get('https://gokisoft.com/menu/switch_quiz?id='+id+'&index='+index+'&status='+status, function(data) {
+      location.reload()
+    })
+  }
+
+  function deleteBrand(id) {
+    option = confirm('Bạn chắc chắn muốn xoá menu này không?')
+    if(option) {
+      $.post("https://gokisoft.com/menu/delete_menu_expand_content",
+      {
+          _token: "Xlb72Nm5z8JdBSCQJROc6eWK5DHLlFLgKLCtXRfn",
+          id: id,
+      },
+      function(data, status){
+        location.reload()
+      });
+    }
+  }
+</script>
+</a><iframe name="oauth2relay550025623" id="oauth2relay550025623" src="./home_files/postmessageRelay(1).html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><div class="note-popover popover in note-link-popover bottom" style="display: none;">  <div class="arrow"></div>  <div class="popover-content note-children-container"><span><a target="_blank"></a>&nbsp;</span><div class="note-btn-group btn-group note-link"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Edit"><i class="note-icon-link"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Unlink"><i class="note-icon-chain-broken"></i></button></div></div></div><div class="note-popover popover in note-image-popover bottom" style="display: none;">  <div class="arrow"></div>  <div class="popover-content note-children-container"><div class="note-btn-group btn-group note-imagesize"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Resize Full"><span class="note-fontsize-10">100%</span></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Resize Half"><span class="note-fontsize-10">50%</span></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Resize Quarter"><span class="note-fontsize-10">25%</span></button></div><div class="note-btn-group btn-group note-float"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Float Left"><i class="note-icon-align-left"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Float Right"><i class="note-icon-align-right"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Float None"><i class="note-icon-align-justify"></i></button></div><div class="note-btn-group btn-group note-remove"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Remove Image"><i class="note-icon-trash"></i></button></div></div></div><div class="note-popover popover in note-table-popover bottom" style="display: none;">  <div class="arrow"></div>  <div class="popover-content note-children-container"><div class="note-btn-group btn-group note-add"><button type="button" class="note-btn btn btn-default btn-sm btn-md" tabindex="-1" title="" data-original-title="Add row below"><i class="note-icon-row-below"></i></button><button type="button" class="note-btn btn btn-default btn-sm btn-md" tabindex="-1" title="" data-original-title="Add row above"><i class="note-icon-row-above"></i></button><button type="button" class="note-btn btn btn-default btn-sm btn-md" tabindex="-1" title="" data-original-title="Add column left"><i class="note-icon-col-before"></i></button><button type="button" class="note-btn btn btn-default btn-sm btn-md" tabindex="-1" title="" data-original-title="Add column right"><i class="note-icon-col-after"></i></button></div><div class="note-btn-group btn-group note-delete"><button type="button" class="note-btn btn btn-default btn-sm btn-md" tabindex="-1" title="" data-original-title="Delete row"><i class="note-icon-row-remove"></i></button><button type="button" class="note-btn btn btn-default btn-sm btn-md" tabindex="-1" title="" data-original-title="Delete column"><i class="note-icon-col-remove"></i></button><button type="button" class="note-btn btn btn-default btn-sm btn-md" tabindex="-1" title="" data-original-title="Delete table"><i class="note-icon-trash"></i></button></div></div></div><div style="display: block; visibility: hidden; position: absolute; width: 106px; left: -1000px; top: -1000px;"><table cellpadding="0" cellspacing="0" dir="ltr" style="width:106px;" frame="void" rules="none" class=" gc-bubbleDefault pls-container"><tbody><tr class="gc-reset"><td class="pls-topLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./home_files/border_3.gif"></td><td class="pls-topTail gc-reset"><img class="pls-tailbottom gc-reset" style="width:15px !important; height:9px !important; max-width: 15px !important; max-height: 9px !important;" src="./home_files/spacer.gif"><img class="pls-spacerbottom gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./home_files/spacer.gif"></td><td class="pls-topRight gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./home_files/border_3.gif"></td></tr><tr class="gc-reset"><td class="pls-vertShimLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="./home_files/spacer.gif"></td><td class="pls-vertShim gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="./home_files/spacer.gif"></td><td class="pls-vertShimRight gc-reset"><img class="pls-dropTR gc-reset" style="width:5px !important; height:4px !important; max-width: 5px !important; max-height: 4px !important;" src="./home_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-contentLeft gc-reset"><img class="pls-tailright gc-reset" style="width:9px !important; height:15px !important; max-width: 9px !important; max-height: 15px !important;" src="./home_files/spacer.gif"><img class="pls-spacerright gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./home_files/spacer.gif"></td><td class="pls-contentWrap gc-reset"><div class="goog-bubble-content gc-reset"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="margin:0px;position:absolute;z-index:1;border-style:none;outline:none;width:100px;" tabindex="0" vspace="0" width="100%" id="I0_1607049328577" name="I0_1607049328577" src="./home_files/subscribe_embed(1).html"></iframe></div></td><td class="pls-dropRight gc-reset"><img class="pls-tailleft gc-reset" style="width:12px !important; height:19px !important; max-width: 12px !important; max-height: 19px !important;" src="./home_files/spacer.gif"><img class="pls-spacerleft gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./home_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-bottomLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./home_files/border_3.gif"></td><td class="gc-reset"><table cellpadding="0" cellspacing="0" style="width:100%" class="gc-reset"><tbody><tr class="gc-reset"><td class="pls-vert gc-reset"><img class="pls-dropBL gc-reset" style="width:4px !important; height:5px !important; max-width: 4px !important; max-height: 5px !important;" src="./home_files/spacer.gif"></td><td class="pls-dropBottom gc-reset"><img class="pls-tailtop gc-reset" style="width:19px !important; height:13px !important; max-width: 19px !important; max-height: 13px !important;" src="./home_files/spacer.gif"><img class="pls-spacertop gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./home_files/spacer.gif"></td></tr></tbody></table></td><td class="pls-vert gc-reset"><img class="pls-dropBR gc-reset" style="width:5px !important; height:5px !important; max-width: 5px !important; max-height: 5px !important;" src="./home_files/spacer.gif"></td></tr></tbody></table></div></body></html>
